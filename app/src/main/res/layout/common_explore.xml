@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#F1F3F4"
+    android:layout_weight="1"
+    android:paddingBottom="29dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="29dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:gravity="center_horizontal"
+            android:textSize="18sp"
+            android:text="wu先生"
+            android:textColor="@color/gold_textcolor"
+            android:id="@+id/common_name__explore_f"
+            />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="29dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gold_textcolor"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:text="22岁"
+                android:id="@+id/common_age__explore_f" />
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="13dp"
+                android:background="@color/white_text_color"
+                android:layout_marginLeft="19dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gold_textcolor"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                android:text="164CM"
+                android:id="@+id/common_height__explore_f" />
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="13dp"
+                android:background="@color/white_text_color"
+                android:layout_marginLeft="19dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gold_textcolor"
+                android:textSize="15sp"
+                android:text="成都"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/common_location__explore_f" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:id="@+id/common_vip_lvl_image__explore_f"
+                android:src="@drawable/vip_0"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gold_textcolor"
+                android:layout_gravity="center_vertical"
+                android:textSize="12sp"
+                android:text="金牌会籍"
+                android:layout_marginLeft="6dp"
+                android:id="@+id/common_vip_lvl_text__explore_f" />
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="9dp"/>
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="7dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/like_ico"
+                android:id="@+id/common_follow_num_image__explore_f"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gold_textcolor"
+                android:layout_gravity="center_vertical"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:text="526"
+                android:id="@+id/common_follow_num_text__explore_f" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/text_lastlogintime__explore_f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="2dp"
+            android:textSize="12sp"
+            android:textColor="#999999" />
+</LinearLayout>

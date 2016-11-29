@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:layout_weight="1.24"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/office_event_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:text=""
+            android:textColor="@color/gold_textcolor"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/myeventtime_imageview"
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/text_4_shape"
+            android:gravity="center"
+            android:text="即将开始"
+            android:textSize="12dp"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:id="@+id/event_item_image_location"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignLeft="@+id/office_event_item_title"
+            android:layout_below="@+id/office_event_item_title"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/address_ico" />
+
+        <TextView
+            android:id="@+id/event_item_text_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/event_item_image_location"
+            android:layout_toRightOf="@id/event_item_image_location"
+            android:text=""
+            android:textColor="@color/text_dark"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/event_item_text_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/event_item_text_location"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/event_item_text_location"
+            android:text=""
+            android:textColor="@color/text_dark"
+            android:textSize="12dp" />
+
+        <TableRow
+            android:id="@+id/personnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/event_item_text_date"
+            android:layout_alignRight="@id/myeventtime_imageview"
+            android:layout_marginRight="5dp">
+
+
+           <!-- <ImageView
+                android:id="@+id/event_icon_female"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/event_ico_number_f" />
+
+            <TextView
+                android:id="@+id/event_item_female_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/text_dark"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/event_icon_male"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/event_ico_number_m" />
+
+            <TextView
+                android:id="@+id/event_item_male_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/text_dark"
+                android:textSize="12sp" />-->
+
+            <ImageView
+                android:id="@+id/event_icon_people"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/event_ico_number" />
+
+            <TextView
+                android:id="@+id/event_item_people_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/text_dark"
+                android:textSize="12sp" />
+        </TableRow>
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+ 

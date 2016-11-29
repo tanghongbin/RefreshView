@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#cccccc" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <ImageView
+                android:id="@+id/git_item_gitPic"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+               android:layout_marginTop="7dp"
+                />
+
+            <TextView
+                android:id="@+id/git_item_gitname"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/git_item_gitPic"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/gold_textcolor" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="13dp"
+            android:background="#cccccc" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="90dp">
+
+            <com.example.com.meimeng.custom.RoundCornerImageView
+                android:id="@+id/git_item_headPic"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/meimeng_ico_user_missing" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/git_item_headPic"
+                android:layout_alignBottom="@+id/git_item_headPic"
+                android:layout_marginLeft="12dp"
+                android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/git_item_nickname"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+
+                android:paddingBottom="10dp"
+                android:text="王二"
+                android:textColor="@color/gold_textcolor"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/gift_item_time"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+
+
+                android:text="2015.11.11"
+                android:textSize="12dp"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/givegiftback_button"
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/buttonstyle_radius3"
+                android:text="回赠"
+                android:textColor="@color/gold_textcolor"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

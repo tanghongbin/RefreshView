@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/vip_center_re4"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/vip_center_server1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/vip_center4_text"
+            android:text="高端定制服务"
+            android:textColor="@color/gold_textcolor"
+            android:textSize="@dimen/vip_center_title_textsize" />
+
+        <ImageView
+            android:id="@+id/vip_center2_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/vip_3" />
+
+        <TextView
+            android:id="@+id/vip_center4_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/vip_center_server1"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/vip_center2_icon"
+            android:text="黑牌会籍"
+            android:textColor="#666666"
+            android:textSize="@dimen/vip_center_title_textsize" />
+
+        <ImageView
+            android:id="@+id/vip_center4_btn1"
+            android:layout_width="20dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/btn_downarrow_2" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dp"
+            android:text="10万/年 起"
+            android:textColor="@color/gold_textcolor"
+            android:textSize="@dimen/vip_center_title_textsize" />
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/vid_center_content4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/cutline" />
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="@dimen/vip_center_conten_padding"
+        android:paddingRight="@dimen/vip_center_conten_padding"
+        android:paddingTop="@dimen/vip_center_conten_paddin_tb"
+        android:paddingBottom="@dimen/vip_center_conten_paddin_tb"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:lineSpacingExtra="10dp"
+            android:text="您如果由于事业或身份原因倾向于更私密的婚恋服务，美盟为您安排专属服务团队，制定专属征婚方案，并在全国范围内提供定向猎取服务。"
+            android:textColor="#666666"
+            android:textSize="@dimen/vip_center_conten_textsize" />
+
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:lineSpacingExtra="10dp"
+            android:text="购买高端定制服服务的必要性"
+            android:textColor="#666666"
+            android:textSize="@dimen/vip_center_conten_textsize" />
+
+\
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="10dp"
+            android:text="1. 为高端人士量身打造专属征婚方案，更符合客户需求"
+            android:textColor="#666666"
+            android:textSize="@dimen/vip_center_conten_textsize" />
+
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="10dp"
+            android:text="2. 私人红娘作为会员情感助理，可为其解决诸多交往难题跨平台、跨地域的定向猎取服务，确保更高的成功机会"
+            android:textColor="#666666"
+            android:textSize="@dimen/vip_center_conten_textsize" />
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:lineSpacingExtra="10dp"
+            android:text="高端定制服务购买方式"
+            android:textColor="#666666"
+            android:textSize="@dimen/vip_center_conten_textsize" />
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="10dp"
+            android:text="1. 致电您的婚恋顾问，我们会根据您的自身条件和择偶需求，您为定制合理的征婚方案"
+            android:textColor="#666666"
+            android:textSize="@dimen/vip_center_conten_textsize" />
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="10dp"
+            android:text="2. 购买该服务须另行签署《美盟高端定制服务协议》"
+            android:textColor="#666666"
+            android:textSize="@dimen/vip_center_conten_textsize" />
+
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="10dp"
+            android:text="3. 如有任何需求，亦可致电：400-8783-520"
+            android:textColor="#666666"
+            android:textSize="@dimen/vip_center_conten_textsize" />
+
+        <Button
+            android:id="@+id/vip_center4_buy_button"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buttonstyle_pressed"
+            android:text="立即购买"
+            android:textColor="@color/text"
+            android:textSize="@dimen/vip_center_btn_textsize"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/cutline" />
+</LinearLayout>

@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/home_image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="376dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/home_list_big_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="375dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/meimeng_ico_index_missing" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dab774" />
+    </LinearLayout>
+
+    <com.example.com.meimeng.custom.CircleImageView
+        android:id="@+id/imageview_round_home"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentTop="true"
+        android:layout_below="@id/home_image_layout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="343dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/meimeng_ico_user_missing_small"
+        app:border_color="#dab774"
+        app:border_width="1dp" />
+
+    <TextView
+        android:id="@+id/text_name_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/imageview_round_home"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/imageview_round_home"
+        android:gravity="center"
+        android:maxEms="3"
+        android:singleLine="true"
+        android:text="efwf"
+        android:textColor="@color/white_text_color"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/homedetail_image_location"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignBottom="@id/text_name_home"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/text_name_home"
+        android:src="@drawable/event_ico_location" />
+
+    <TextView
+        android:id="@+id/homedetail_textview_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/homedetail_image_location"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/homedetail_image_location"
+        android:textColor="@color/text_dark"
+        android:textSize="12sp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/imageview_round_home"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal">
+
+        <TableRow
+            android:id="@+id/like_story_tableRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/vote_star_imageView"
+                android:layout_width="16dp"
+                android:layout_height="17dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="7dp"
+                android:src="@drawable/ico_story_fav_pressed" />
+
+            <TextView
+                android:id="@+id/text_votenum_home"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:text="250"
+                android:textColor="@color/white_text_color"
+                android:textSize="12sp" />
+
+        </TableRow>
+
+        <TextView
+            android:id="@+id/iamgeview_recommend"
+            android:layout_width="48dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:text="红娘推荐"
+
+            android:textSize="11dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:background="#8dd2cf"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/like_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageview_round_home"
+        android:clickable="false"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_story_content_home"
+            style="@style/Text_Story"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:ellipsize="end"
+            android:lineSpacingMultiplier="1.5"
+            android:maxLines="3"
+            android:textColor="@color/text_dark"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    android:orientation="vertical">
+    <include layout="@layout/titlebar"></include>
+
+    <EditText
+        android:id="@+id/event_initiate_describeinput_text"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="top"
+        android:textColor="@color/text_gray"
+        android:textColorHint="@color/text_gray"
+        />
+
+</LinearLayout>

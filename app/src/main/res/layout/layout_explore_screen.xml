@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebarlayout"></include>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dddddd"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/explore_screen_edit"
+            android:layout_width="310dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="15dp"
+            android:hint="@string/explore_screen_hint"
+            android:textColorHint="@color/explore_screen_hint_color"
+            android:textSize="@dimen/explore_screen_edit_text_size"
+            android:background="@drawable/explore_screen_edit_background_a"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#ffffff">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="center"
+            android:background="@color/explore_screen_line_color"/>
+        <LinearLayout
+            android:id="@+id/explore_screen_region"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="38dp"
+                android:text="地区"
+                android:textColor="@color/explore_screen_hint_color"
+                android:textSize="@dimen/explore_screen_option_text_size"/>
+
+            <TextView
+                android:id="@+id/screen_region_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="请选择地区"
+                android:textSize="@dimen/explore_screen_data_text_size"
+                android:textColor="@color/explore_screen_data_text_color"/>
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="15dp"
+                android:layout_marginRight="38dp"
+                android:src="@drawable/nav_back"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="@color/explore_screen_line_color"/>
+
+        <LinearLayout
+            android:id="@+id/explore_screen_age"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="38dp"
+                android:text="年龄"
+                android:textColor="@color/explore_screen_hint_color"
+                android:textSize="@dimen/explore_screen_option_text_size"/>
+
+            <TextView
+                android:id="@+id/screen_age_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="请选择年龄"
+                android:textSize="@dimen/explore_screen_data_text_size"
+                android:textColor="@color/explore_screen_data_text_color"/>
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="15dp"
+                android:layout_marginRight="38dp"
+                android:src="@drawable/nav_back"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="@color/explore_screen_line_color"/>
+
+        <LinearLayout
+            android:id="@+id/explore_screen_height"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="38dp"
+                android:text="身高"
+                android:textColor="@color/explore_screen_hint_color"
+                android:textSize="@dimen/explore_screen_option_text_size"/>
+
+            <TextView
+                android:id="@+id/screen_height_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="请选择身高"
+                android:textSize="@dimen/explore_screen_data_text_size"
+                android:textColor="@color/explore_screen_data_text_color"/>
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="15dp"
+                android:layout_marginRight="38dp"
+                android:src="@drawable/nav_back"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="@color/explore_screen_line_color"/>
+
+         <TextView
+             android:id="@+id/explore_screen_btn"
+             android:layout_width="300dp"
+             android:layout_height="40dp"
+             android:layout_gravity="center"
+             android:layout_marginTop="61dp"
+             android:gravity="center"
+             android:background="@drawable/explore_screen_btn_background"
+             android:text="搜索"
+             android:textSize="@dimen/explore_screen_btn_text_size"
+             android:textColor="@color/explore_screen_btn_text_color"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+        <include layout="@layout/select_layout"
+            android:layout_alignParentBottom="true"></include>
+    </RelativeLayout>
+
+
+</LinearLayout>

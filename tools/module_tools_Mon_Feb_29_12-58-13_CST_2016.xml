@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_tools" default="compile.module.tools">
+  <dirname property="module.tools.basedir" file="${ant.file.module_tools}"/>
+  
+  <property name="module.jdk.home.tools" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.tools" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.tools" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.tools" value="-encoding GBK -source 8 ${compiler.args}"/>
+  
+  <property name="tools.output.dir" value="${module.tools.basedir}/build"/>
+  <property name="tools.testoutput.dir" value="${module.tools.basedir}/build"/>
+  
+  <path id="tools.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="tools.module.production.classpath">
+    <path refid="${module.jdk.classpath.tools}"/>
+  </path>
+  
+  <path id="tools.runtime.production.module.classpath">
+    <pathelement location="${tools.output.dir}"/>
+  </path>
+  
+  <path id="tools.module.classpath">
+    <path refid="${module.jdk.classpath.tools}"/>
+    <pathelement location="${tools.output.dir}"/>
+  </path>
+  
+  <path id="tools.runtime.module.classpath">
+    <pathelement location="${tools.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.tools">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.tools">
+    <patternset refid="excluded.from.module.tools"/>
+  </patternset>
+  
+  
+  <target name="compile.module.tools" depends="compile.module.tools.production,compile.module.tools.tests" description="Compile module tools"/>
+  
+  <target name="compile.module.tools.production" depends="register.custom.compilers" description="Compile module tools; production classes"/>
+  
+  <target name="compile.module.tools.tests" depends="register.custom.compilers,compile.module.tools.production" description="compile module tools; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.tools" description="cleanup module">
+    <delete dir="${tools.output.dir}"/>
+    <delete dir="${tools.testoutput.dir}"/>
+  </target>
+</project>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_wheel_layout"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    android:layout_alignParentBottom="true"
+    android:background="#ffffff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:visibility="invisible">
+
+    <Button
+        android:id="@+id/activity_wheel_cover_button"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="#00000000"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/activity_wheel_select_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#000000"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/activity_wheel_cancel_text"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="#FFF"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/activity_wheel_sure_text"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="#FFF"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#eeeeee"
+            android:gravity="center">
+
+            <com.example.com.meimeng.custom.CityPicker2
+                android:id="@+id/activity_wheel_city_picker"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="center"
+                android:visibility="invisible"></com.example.com.meimeng.custom.CityPicker2>
+
+            <com.example.com.meimeng.custom.ThreeWheelView
+                android:id="@+id/activity_wheel_three_picker"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:visibility="invisible"></com.example.com.meimeng.custom.ThreeWheelView>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

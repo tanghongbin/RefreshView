@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.com.meimeng.custom.RoundCornerLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <com.example.com.meimeng.custom.RoundCornerLinearLayout
+        android:id="@+id/personview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:background="#F1F3F4"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="254dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/imageview_explore_f"
+                android:layout_width="254dp"
+                android:layout_height="261dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/meimeng_ico_user_missing" />
+        </LinearLayout>
+
+
+        <include layout="@layout/common_explore"
+            ></include>
+
+
+    </com.example.com.meimeng.custom.RoundCornerLinearLayout>
+
+
+
+</com.example.com.meimeng.custom.RoundCornerLinearLayout>

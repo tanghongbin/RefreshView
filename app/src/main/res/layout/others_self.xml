@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <include
+        android:id="@+id/others_self_bottom_layout"
+        layout="@layout/self_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"></include>
+
+    <include
+        android:id="@+id/others_self_title_layout"
+        layout="@layout/others_titlebar"></include>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/others_self_title_layout">
+
+        <com.melnykov.fab.ObservableScrollView
+            android:id="@+id/others_scroll_view2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/others_self_bottom_layout"
+            android:layout_below="@id/others_self_title_layout"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#dddddd"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/others_self_top_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/others_header"></include>
+
+                    <include layout="@layout/common_header"></include>
+
+                    <include layout="@layout/common_1"></include>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/photo_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical">
+
+                        <!--  <ImageView
+                              android:id="@+id/gift_image_view"
+                              android:layout_width="20dp"
+                              android:layout_height="20dp"
+                              android:layout_marginRight="5dp"
+                              android:src="@drawable/gift" />-->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="我的礼物"
+                            android:textColor="@color/text"
+                            android:textSize="15sp" />
+                    </TableRow>
+
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:paddingBottom="28dp"
+                        android:paddingTop="28dp">
+
+                        <LinearLayout
+                            android:id="@+id/others_self_give_gift_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/add_photo" />
+
+                            <TextView
+                                android:id="@+id/person_sex"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="送TA礼物"
+                                android:textColor="@color/white_text_color"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <HorizontalScrollView
+                            android:id="@+id/others_self_horizontal_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:scrollbars="none">
+
+                            <LinearLayout
+                                android:id="@+id/gift_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+                            </LinearLayout>
+                        </HorizontalScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <include layout="@layout/others_base_info"></include>
+
+                <include layout="@layout/others_work_info"></include>
+
+                <include layout="@layout/others_income_info"></include>
+
+                <include layout="@layout/others_interest_info"></include>
+
+                <include layout="@layout/others_story"></include>
+            </LinearLayout>
+        </com.melnykov.fab.ObservableScrollView>
+
+        <!--<com.melnykov.fab.FloatingActionButton
+            android:id="@+id/others_matchmaker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_margin="16dp"
+            android:layout_marginBottom="80dp"
+            android:adjustViewBounds="true"
+            android:background="#00000000"
+            android:maxHeight="40dp"
+            android:maxWidth="40dp"
+            android:padding="15dp"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            fab:fab_colorNormal="#00000000"
+            fab:fab_colorPressed="#00000000"
+            fab:fab_colorRipple="#00000000" />-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="35dp"
+            android:layout_height="wrap_content">
+            <com.example.com.meimeng.custom.CircleWaveView
+                android:id="@+id/others_matchmaker"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:visibility="gone"
+                />
+            <ImageView
+                android:id="@+id/others_matchmaker_1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <include layout="@layout/dialog_layout"></include>
+
+    <ImageView
+        android:id="@+id/guide_xinshou"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
+</RelativeLayout>

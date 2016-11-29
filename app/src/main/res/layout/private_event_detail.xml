@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/private_event_item_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/meimeng_ico_index_missing" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="214dp"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/private_event_item_title"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="19dp"
+            android:textColor="@color/text"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/private_event_item_state"
+            android:layout_width="74dp"
+            android:layout_height="22dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/private_event_item_title"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/text_4_shape"
+            android:gravity="center"
+            android:text="即将开始"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignEnd="@+id/private_event_item_state"
+            android:layout_below="@+id/private_event_item_title"
+            android:layout_marginTop="19dp"
+            android:background="@color/divider_line_bac">
+
+        </View>
+
+        <ImageView
+            android:id="@+id/private_item_location_image"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignStart="@+id/private_event_item_title"
+            android:layout_below="@+id/view"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/event_ico_location" />
+
+        <TextView
+            android:id="@+id/private_detail_text_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/private_detail_date"
+            android:layout_alignTop="@+id/private_item_location_image"
+            android:textColor="@color/event_detail_text"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/icon_time"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignStart="@+id/private_item_location_image"
+            android:layout_below="@+id/private_detail_text_location"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ico_time" />
+
+        <TextView
+            android:id="@+id/private_detail_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/icon_time"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/icon_time"
+            android:textColor="@color/event_detail_text"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/icon_num"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignStart="@+id/icon_time"
+            android:layout_below="@+id/private_detail_date"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/event_ico_number" />
+
+        <TextView
+            android:id="@+id/private_detail_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/icon_num"
+            android:layout_alignStart="@+id/private_detail_date"
+            android:textColor="@color/event_detail_text"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/icon_cost"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/private_detail_num"
+            android:layout_marginTop="10dp"
+            android:layout_toStartOf="@+id/private_detail_date"
+            android:src="@drawable/event_detail_cost"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/private_detail_cost_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/icon_cost"
+            android:layout_alignStart="@+id/private_detail_num"
+            android:textColor="@color/event_detail_text"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/private_detail_attend_button"
+            android:layout_width="84dp"
+            android:layout_height="22dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/text_on_shape"
+            android:gravity="center"
+            android:text="立即参加"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/item_bac"></View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center|left"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:text="发起人"
+        android:textColor="@color/text"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/item_bac"></View>
+
+    <LinearLayout
+        android:id="@+id/person_information"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <com.example.com.meimeng.custom.CircleImageView
+            android:id="@+id/private_detail_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/meimeng_ico_user_missing"
+            app:border_color="#dab774"
+            app:border_width="1dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/private_detail_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="5dp"
+                android:text=""
+                android:textColor="@color/text" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/private_detail_vip_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/vip_0" />
+
+                <TextView
+                    android:id="@+id/private_detail_vip_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text=""
+                    android:textColor="@color/text" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/item_bac"></View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@android:color/white"
+        android:gravity="center|left"
+        android:paddingStart="11dp"
+        android:text="活动简介"
+        android:textColor="@color/text" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/item_bac"></View>
+
+    <TextView
+        android:id="@+id/private_detail_describe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:lineSpacingExtra="5dp"
+        android:paddingStart="11dp"
+        android:paddingTop="20dp"
+        android:text="@string/test"
+        android:textColor="@color/event_detail_text"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dddddd" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/about_logo"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/slogen" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@color/white" />
+
+
+</LinearLayout>

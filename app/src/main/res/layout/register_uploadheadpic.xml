@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/tab_bac"
+        android:orientation="vertical">
+
+        <include layout="@layout/titlebar"></include>
+
+        <com.example.com.meimeng.custom.CircleImageView
+            android:id="@+id/register_uploadheadpic_picview"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="45dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/meimeng_ico_user_missing"
+            app:border_color="#514735"
+            app:border_width="2dp" />
+
+        <RelativeLayout
+            android:id="@+id/register_uploadheadpic_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/register_uploadheadpic_view"
+                android:layout_width="23dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ico_pic" />
+
+            <TextView
+                android:id="@+id/register_uploadheadpic_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/register_uploadheadpic_view"
+                android:text="上传头像"
+                android:textColor="@color/text"
+                android:textSize="17dp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/register_uploadheadpic_nextButton"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/buttonstyle_pressed"
+            android:text="下一步"
+            android:textColor="#bf9f62"
+            android:textSize="17dp" />
+
+    </LinearLayout>
+
+    <include layout="@layout/dialog_layout"></include>
+</RelativeLayout>

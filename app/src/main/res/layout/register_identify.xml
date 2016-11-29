@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tab_bac"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar"></include>
+
+    <RelativeLayout
+        android:id="@+id/register_identify_user"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="#00000000">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="身份认证"
+            android:textColor="#999999"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0dp"
+            android:src="@drawable/login_ico_arrow_l" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="7dp"
+            android:background="#999999" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/register_identify_money"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#00000000">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="资产认证"
+            android:textColor="#999999"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0dp"
+            android:src="@drawable/login_ico_arrow_l" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="7dp"
+            android:background="#999999" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/register_identify_mar"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#00000000">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="单身承诺"
+            android:textColor="#999999"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0dp"
+            android:src="@drawable/login_ico_arrow_l" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="7dp"
+            android:background="#999999" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/register_identify_job"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#00000000">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="职业认证"
+            android:textColor="#999999"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0dp"
+            android:src="@drawable/login_ico_arrow_l" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="7dp"
+            android:background="#999999" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/register_identify_education"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#00000000">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="学历认证"
+            android:textColor="#999999"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0dp"
+            android:src="@drawable/login_ico_arrow_l" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="7dp"
+            android:background="#999999" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/register_identify_button"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/buttonstyle_pressed"
+        android:text="完成"
+        android:textColor="@color/text"
+        android:textSize="17dp" />
+
+</LinearLayout>

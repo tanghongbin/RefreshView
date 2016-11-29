@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        ></LinearLayout>
+
+    <com.example.com.meimeng.custom.WheelView
+        android:id="@+id/year"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:itemNumber="3"
+        app:lineColor="@color/bar_pressed"
+        app:maskHight="32dp"
+        app:noEmpty="true"
+        app:lineHeight="1dp"
+        app:normalTextColor="#bf9f62"
+        app:normalTextSize="15sp"
+        app:selectedTextColor="@color/bar_pressed"
+        app:selectedTextSize="18sp"
+        app:unitHight="40dp" />
+
+
+
+    <com.example.com.meimeng.custom.WheelView
+        android:id="@+id/month"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:itemNumber="3"
+        app:lineColor="@color/bar_pressed"
+        app:maskHight="32dp"
+        app:noEmpty="true"
+        app:lineHeight="1dp"
+        app:normalTextColor="#bf9f62"
+        app:normalTextSize="15sp"
+        app:selectedTextColor="@color/bar_pressed"
+        app:selectedTextSize="18sp"
+        app:unitHight="40dp" />
+
+
+
+    <com.example.com.meimeng.custom.WheelView
+        android:id="@+id/day"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:itemNumber="3"
+        app:lineColor="@color/bar_pressed"
+        app:maskHight="32dp"
+        app:noEmpty="true"
+        app:lineHeight="1dp"
+        app:normalTextColor="#bf9f62"
+        app:normalTextSize="15sp"
+        app:selectedTextColor="@color/bar_pressed"
+        app:selectedTextSize="18sp"
+        app:unitHight="40dp" />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        ></LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bar_normal">#c5c5c5</color>
+    <color name="bar_normal_x">#999999</color>
+    <color name="bar_pressed">#bf9f62</color>
+    <color name="text">#bf9f62</color>
+    <color name="select_layout_line_color">#70bf9f62</color>
+    <color name="item_bac">#EEEEEE</color>
+    <color name="event_detail_text">#666666</color>
+    <color name="viewpagerbackground">#181818</color>
+    <color name="center_color">#f6f6f6</color>
+    <color name="event_text_color">#FFDAB774</color>
+    <color name="event_background">#E7E7E7</color>
+    <color name="title_black">#111111</color>
+    <color name="gold_textcolor">#dab774</color>
+    <color name="text_gray">#999999</color>
+
+    <color name="text_dark">#666666</color>
+    <color name="white">#ffffff</color>
+    <color name="backgroundcolor">#eeeeee</color>
+    <color name="cutline">#dddddd</color>
+    <color name="login_edit_color">#252525</color>
+    <color name="matchmaker">#8dd2cf</color>
+    <color name="hasjoin">#999999</color>
+    <color name="event_content_color">#ffffff</color>
+    <color name="titlebar_text_color">#545454</color>
+    <color name="select_text_color">#bf9f62</color>
+    <color name="title_text_color">#bf9f62</color>
+    <color name="transparent">#00000000</color>
+
+
+
+
+    <color name="background_home">#f1f3f4</color>
+    <color name="text_explore_color">#d1b278</color>
+    <color name="line_explore_color">#dddddd</color>
+
+    <color name="black">#000000</color>
+    <color name="press_color">#DAA520</color>
+    <color name="color_transparent">#00000000</color>
+
+    <color name="color_1">#ffffaa06</color>
+
+    <color name="black_text_color">#bf9f62</color>
+    <color name="white_text_color">#dab774</color>
+    <color name="like_text_color">#999999</color>
+
+
+    <color name="tab_normal">#999999</color>
+    <color name="tab_bac">#ffffff</color>
+    <color name="manage_list_item_bac">#F24040</color>
+    <color name="red">#F55160</color>
+
+    <color name="divider_line_bac">#dddddd</color>
+    <color name="event_detail">#666666</color>
+
+    <!--发现搜索页-->
+
+    <color name="explore_screen_hint_color">#999999</color>
+    <color name="explore_screen_option_text_color">#666666</color>
+    <color name="explore_screen_line_color">#dddddd</color>
+    <color name="explore_screen_data_text_color">#333333</color>
+    <color name="explore_screen_btn_text_color">#ffffff</color>
+
+    <!--活动详情页-->
+
+    <color name="office_event_title_textcolor">#666666</color>
+    <color name="office_event_detail_textcolor">#666666</color>
+    <color name="office_detail_cost_textcolor">#bf9f62</color>
+
+    <!--我的活动页-->
+    <color name="myevent_textcolor">#333333</color>
+    <color name="myevent_btn_detail_color">#bf9f62</color>
+    <color name="myevent_btn_pressed_color">#d9d3ca</color>
+
+    <!--认证中心页-->
+    <color name="center_title_textcolor">#666666</color>
+    <color name="center_content_textcolor">#f3583e</color>
+
+    <!--分享菜单-->
+    <color name="share_textcolor">#7d9fd8</color>
+
+    <color name="divider_color">#E8E8E8</color>
+
+    <!--消息页-->
+    <color name="chat_name_color">#666666</color>
+
+    <!--礼物-->
+    <color name="gify_btn_text_color_normal">#666666</color>
+    <color name="gify_btn_text_color_pressed">#bf9f62</color>
+
+</resources>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/backgroundcolor"
+        android:orientation="horizontal">
+
+        <!--
+        <RelativeLayout
+            android:id="@+id/evnet_office_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/evnet_office_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@color/backgroundcolor"
+                android:gravity="center"
+                android:text="官方活动"
+                android:textColor="@color/bar_pressed"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/evnet_office_view"
+                android:layout_width="100dp"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/black_text_color"></ImageView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/event_private_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/event_private_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@color/backgroundcolor"
+                android:gravity="center"
+                android:text="私人邀约"
+                android:textColor="@color/tab_normal"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/event_private_view"
+                android:layout_width="100dp"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/black_text_color"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/event_six_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/event_six_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@color/backgroundcolor"
+                android:gravity="center"
+                android:text="跨界合作"
+                android:textColor="@color/tab_normal"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/event_six_view"
+                android:layout_width="100dp"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/black_text_color"
+                android:visibility="gone" />
+        </RelativeLayout>
+        -->
+
+        <!--活动_地区按钮-->
+        <LinearLayout
+            android:id="@+id/event_region"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="15dp"
+                android:gravity="center"
+                android:text="地区"
+                android:textSize="@dimen/event_text_size"
+                android:textColor="@color/text"
+                />
+
+            <ImageView
+                android:id="@+id/event_region_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="7dp"
+                android:src="@drawable/event_btn_default"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+        <!--活动_月份-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+        </LinearLayout>
+
+        <!--活动_状态按钮-->
+        <LinearLayout
+            android:id="@+id/event_state"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:gravity="center"
+                android:text="状态"
+                android:textSize="@dimen/event_text_size"
+                android:textColor="@color/text"
+                />
+            <ImageView
+                android:id="@+id/event_state_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="7dp"
+                android:paddingRight="15dp"
+                android:src="@drawable/event_btn_default"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--<FrameLayout-->
+        <!--android:id="@+id/event_space"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"></FrameLayout>-->
+
+    <!--活动展示ListView-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/event_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/item_bac"
+        android:divider="@null"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrMode="both"
+        ptr:ptrOverScroll="false"
+        ptr:ptrShowIndicator="false">
+
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+        <include layout="@layout/select_layout"></include>
+
+    <include layout="@layout/dialog_layout"></include>
+    </RelativeLayout>
+</LinearLayout>

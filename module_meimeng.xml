@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_meimeng" default="compile.module.meimeng">
+  <dirname property="module.meimeng.basedir" file="${ant.file.module_meimeng}"/>
+  
+  <property name="module.jdk.home.meimeng" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.meimeng" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.meimeng" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.meimeng" value="-encoding GBK -source 8 ${compiler.args}"/>
+  
+  <property name="meimeng.output.dir" value="${module.meimeng.basedir}/build/classes/main"/>
+  <property name="meimeng.testoutput.dir" value="${module.meimeng.basedir}/build/classes/test"/>
+  
+  <path id="meimeng.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="meimeng.module.production.classpath">
+    <path refid="${module.jdk.classpath.meimeng}"/>
+    <pathelement location="${basedir}/leanchatlib/libs/android-async-http-1.4.6.jar"/>
+    <pathelement location="${basedir}/leanchatlib/libs/eventbus-2.4.0.jar"/>
+    <pathelement location="${basedir}/leanchatlib/libs/prettytime-3.2.5.Final.jar"/>
+    <pathelement location="${basedir}/leanchatlib/libs/universal-image-loader-1.9.3.jar"/>
+    <pathelement location="${basedir}/leanchatlib/libs/avoscloud-sdk-v3.1.4.jar"/>
+    <pathelement location="${basedir}/leanchatlib/libs/avoscloud-push-v3.1.4.jar"/>
+    <pathelement location="${basedir}/leanchatlib/libs/fastjson-1.1.37-leancloud.jar"/>
+    <pathelement location="${basedir}/leanchatlib/libs/Java-WebSocket-1.2.0-leancloud.jar"/>
+  </path>
+  
+  <path id="meimeng.runtime.production.module.classpath">
+    <pathelement location="${meimeng.output.dir}"/>
+    <pathelement location="${basedir}/leanchatlib/libs/android-async-http-1.4.6.jar"/>
+    <pathelement location="${basedir}/leanchatlib/libs/eventbus-2.4.0.jar"/>
+    <pathelement location="${basedir}/leanchatlib/libs/prettytime-3.2.5.Final.jar"/>
+    <pathelement location="${basedir}/leanchatlib/libs/universal-image-loader-1.9.3.jar"/>
+    <pathelement location="${basedir}/leanchatlib/libs/avoscloud-sdk-v3.1.4.jar"/>
+    <pathelement location="${basedir}/leanchatlib/libs/avoscloud-push-v3.1.4.jar"/>
+    <pathelement location="${basedir}/leanchatlib/libs/fastjson-1.1.37-leancloud.jar"/>
+    <pathelement location="${basedir}/leanchatlib/libs/Java-WebSocket-1.2.0-leancloud.jar"/>
+  </path>
+  
+  <path id="meimeng.module.classpath">
+    <path refid="${module.jdk.classpath.meimeng}"/>
+    <pathelement location="${meimeng.output.dir}"/>
+    <pathelement location="${basedir}/leanchatlib/libs/android-async-http-1.4.6.jar"/>
+    <pathelement location="${basedir}/leanchatlib/libs/eventbus-2.4.0.jar"/>
+    <pathelement location="${basedir}/leanchatlib/libs/prettytime-3.2.5.Final.jar"/>
+    <pathelement location="${basedir}/leanchatlib/libs/universal-image-loader-1.9.3.jar"/>
+    <pathelement location="${basedir}/leanchatlib/libs/avoscloud-sdk-v3.1.4.jar"/>
+    <pathelement location="${basedir}/leanchatlib/libs/avoscloud-push-v3.1.4.jar"/>
+    <pathelement location="${basedir}/leanchatlib/libs/fastjson-1.1.37-leancloud.jar"/>
+    <pathelement location="${basedir}/leanchatlib/libs/Java-WebSocket-1.2.0-leancloud.jar"/>
+  </path>
+  
+  <path id="meimeng.runtime.module.classpath">
+    <pathelement location="${meimeng.testoutput.dir}"/>
+    <pathelement location="${meimeng.output.dir}"/>
+    <pathelement location="${basedir}/leanchatlib/libs/android-async-http-1.4.6.jar"/>
+    <pathelement location="${basedir}/leanchatlib/libs/eventbus-2.4.0.jar"/>
+    <pathelement location="${basedir}/leanchatlib/libs/prettytime-3.2.5.Final.jar"/>
+    <pathelement location="${basedir}/leanchatlib/libs/universal-image-loader-1.9.3.jar"/>
+    <pathelement location="${basedir}/leanchatlib/libs/avoscloud-sdk-v3.1.4.jar"/>
+    <pathelement location="${basedir}/leanchatlib/libs/avoscloud-push-v3.1.4.jar"/>
+    <pathelement location="${basedir}/leanchatlib/libs/fastjson-1.1.37-leancloud.jar"/>
+    <pathelement location="${basedir}/leanchatlib/libs/Java-WebSocket-1.2.0-leancloud.jar"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.meimeng">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.meimeng">
+    <patternset refid="excluded.from.module.meimeng"/>
+  </patternset>
+  
+  
+  <target name="compile.module.meimeng" depends="compile.module.meimeng.production,compile.module.meimeng.tests" description="Compile module MeiMeng"/>
+  
+  <target name="compile.module.meimeng.production" depends="register.custom.compilers" description="Compile module MeiMeng; production classes"/>
+  
+  <target name="compile.module.meimeng.tests" depends="register.custom.compilers,compile.module.meimeng.production" description="compile module MeiMeng; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.meimeng" description="cleanup module">
+    <delete dir="${meimeng.output.dir}"/>
+    <delete dir="${meimeng.testoutput.dir}"/>
+  </target>
+</project>

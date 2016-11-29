@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/vip_center_re2"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/vip_center_server1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/vip_center2_text"
+            android:paddingRight="15dp"
+            android:text="线上通关服务"
+            android:textColor="@color/gold_textcolor"
+            android:textSize="@dimen/vip_center_title_textsize" />
+
+        <ImageView
+            android:id="@+id/vip_center2_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+
+
+            android:src="@drawable/vip_1" />
+
+        <TextView
+            android:id="@+id/vip_center2_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/vip_center_server1"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/vip_center2_icon"
+            android:text="银牌会籍"
+            android:textColor="#666666"
+            android:textSize="@dimen/vip_center_title_textsize" />
+
+        <ImageView
+            android:id="@+id/vip_center2_btn1"
+            android:layout_width="20dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+
+            android:src="@drawable/btn_downarrow_2" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dp"
+            android:text="1,998元/6个月"
+            android:textColor="@color/gold_textcolor"
+            android:textSize="@dimen/vip_center_title_textsize" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/vid_center_content2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible" >
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/cutline" />
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="@dimen/vip_center_conten_padding"
+        android:paddingRight="@dimen/vip_center_conten_padding"
+        android:paddingTop="@dimen/vip_center_conten_paddin_tb"
+        android:paddingBottom="@dimen/vip_center_conten_paddin_tb"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:lineSpacingExtra="10dp"
+            android:text="您在使用“美盟APP”过程中，如需更高效的与优质异性建立联系，可购买美盟通关卡，即在6个月之内可与所有“相互喜欢”的优秀异性建立聊天通道。"
+            android:textColor="#666666"
+            android:textSize="@dimen/vip_center_conten_textsize" />
+
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:lineSpacingExtra="10dp"
+            android:text="购买美盟通关卡的必要性"
+            android:textColor="#666666"
+            android:textSize="@dimen/vip_center_conten_textsize" />
+
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="10dp"
+            android:text="1. 独有身份标识，更引人注目"
+            android:textColor="#666666"
+            android:textSize="@dimen/vip_center_conten_textsize" />
+
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="10dp"
+            android:text="2. 极大提高结识优秀异性的效率和成功率"
+            android:textColor="#666666"
+            android:textSize="@dimen/vip_center_conten_textsize" />
+
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="10dp"
+            android:text="3. 避免中意人选被他人捷足先登"
+            android:textColor="#666666"
+            android:textSize="@dimen/vip_center_conten_textsize" />
+
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:lineSpacingExtra="10dp"
+            android:text="美盟通关卡购买方式"
+            android:textColor="#666666"
+            android:textSize="@dimen/vip_center_conten_textsize" />
+
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="10dp"
+            android:text="1. 点击下方链接直接购买"
+            android:textColor="#666666"
+            android:textSize="@dimen/vip_center_conten_textsize" />
+
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="10dp"
+            android:text="2. 致电您的婚恋顾问，由其为您安排购买事宜"
+            android:textColor="#666666"
+            android:textSize="@dimen/vip_center_conten_textsize" />
+
+
+
+        <Button
+            android:id="@+id/vip_center2_buy_button"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buttonstyle_pressed"
+            android:text="立即购买"
+            android:textColor="@color/text"
+            android:textSize="@dimen/vip_center_btn_textsize"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/cutline" />
+
+</LinearLayout>
