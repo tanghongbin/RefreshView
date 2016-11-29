@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/item_bac"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/office_event_item_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/event_item_image_height"
+        android:background="#000000"
+        android:scaleType="centerCrop"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/event_content_rl"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/event_content_rl_marginTop"
+        android:layout_width="match_parent"
+        android:background="#00000000"
+        android:layout_height="wrap_content"
+
+        >
+
+        <TextView
+            android:id="@+id/office_event_item_titl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="2dp"
+            android:text="@string/testname"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/event_content_color"
+            android:textSize="@dimen/event_item_titl_textsize"
+            android:textStyle="bold"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:layout_below="@+id/office_event_item_titl">
+        <TextView
+            android:id="@+id/event_item_text_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上海市"
+            android:textColor="@color/event_content_color"
+            android:textSize="@dimen/item_text_location_textsize" />
+        <TextView
+            android:id="@+id/event_item_shu_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="|"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/event_content_color"
+            android:layout_toRightOf="@+id/event_item_text_location"
+            android:textSize="@dimen/item_text_location_textsize" />
+
+        <TextView
+            android:id="@+id/event_item_text_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/event_item_shu_location"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/event_item_shu_location"
+            android:layout_alignBaseline="@+id/event_item_shu_location"
+            android:text="2015.12.10"
+            android:textColor="@color/event_content_color"
+            android:textSize="@dimen/event_item_text_date_textsize" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/event_content_rl"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/office_event_item_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="进行中"
+            android:textSize="@dimen/event_item_state_textsize"
+            android:textColor="@color/event_content_color"
+            />
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/office_event_item_image"
+        android:background="@color/event_background"/>
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_viewpagerindicator" default="compile.module.viewpagerindicator">
+  <dirname property="module.viewpagerindicator.basedir" file="${ant.file.module_viewpagerindicator}"/>
+  
+  <property name="module.jdk.home.viewpagerindicator" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.viewpagerindicator" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.viewpagerindicator" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.viewpagerindicator" value="-encoding GBK -source 8 ${compiler.args}"/>
+  
+  <property name="viewpagerindicator.output.dir" value="${module.viewpagerindicator.basedir}/build"/>
+  <property name="viewpagerindicator.testoutput.dir" value="${module.viewpagerindicator.basedir}/build"/>
+  
+  <path id="viewpagerindicator.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="viewpagerindicator.module.production.classpath">
+    <path refid="${module.jdk.classpath.viewpagerindicator}"/>
+  </path>
+  
+  <path id="viewpagerindicator.runtime.production.module.classpath">
+    <pathelement location="${viewpagerindicator.output.dir}"/>
+  </path>
+  
+  <path id="viewpagerindicator.module.classpath">
+    <path refid="${module.jdk.classpath.viewpagerindicator}"/>
+    <pathelement location="${viewpagerindicator.output.dir}"/>
+  </path>
+  
+  <path id="viewpagerindicator.runtime.module.classpath">
+    <pathelement location="${viewpagerindicator.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.viewpagerindicator">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.viewpagerindicator">
+    <patternset refid="excluded.from.module.viewpagerindicator"/>
+  </patternset>
+  
+  
+  <target name="compile.module.viewpagerindicator" depends="compile.module.viewpagerindicator.production,compile.module.viewpagerindicator.tests" description="Compile module ViewPagerIndicator"/>
+  
+  <target name="compile.module.viewpagerindicator.production" depends="register.custom.compilers" description="Compile module ViewPagerIndicator; production classes"/>
+  
+  <target name="compile.module.viewpagerindicator.tests" depends="register.custom.compilers,compile.module.viewpagerindicator.production" description="compile module ViewPagerIndicator; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.viewpagerindicator" description="cleanup module">
+    <delete dir="${viewpagerindicator.output.dir}"/>
+    <delete dir="${viewpagerindicator.testoutput.dir}"/>
+  </target>
+</project>

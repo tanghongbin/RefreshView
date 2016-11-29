@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tab_bac"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar"></include>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/tab_bac"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:paddingLeft="38dp"
+                android:paddingRight="38dp">
+
+                <TextView
+                    android:id="@+id/num"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="+86"
+                    android:textColor="@color/text_dark"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/register_first_tel"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/num"
+
+
+                    android:background="#00000000"
+                    android:hint="手机号码"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:singleLine="true"
+                    android:textColor="@color/text_dark"
+                    android:textColorHint="@color/text_gray"
+                    android:textSize="15dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="7dp"
+                    android:background="#BF9F62" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#00000000"
+                android:paddingLeft="38dp"
+                android:paddingRight="38dp">
+
+                <TextView
+                    android:id="@+id/text_1"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="验证码"
+                    android:textColor="@color/text_dark"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/register_first_codeEdit"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/text_1"
+                    android:background="#00000000"
+                    android:gravity="center_vertical"
+                    android:hint="请输入验证码"
+                    android:singleLine="true"
+                    android:textColor="@color/text_dark"
+                    android:textColorHint="@color/text_gray"
+                    android:textSize="15dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="7dp"
+                    android:background="#BF9F62" />
+
+                <TextView
+                    android:id="@+id/register_first_code"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/auth_code_bg_1"
+
+                    android:gravity="center"
+                    android:text="获取验证码"
+                    android:textColor="#bf9f62"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#00000000"
+                android:paddingLeft="38dp"
+                android:paddingRight="38dp">
+
+                <TextView
+                    android:id="@+id/num_2"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="密码"
+                    android:textColor="@color/text_dark"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/register_first_psw"
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/num_2"
+                    android:background="#00000000"
+                    android:hint="密码"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:textColor="@color/text_dark"
+                    android:textColorHint="@color/text_gray"
+                    android:textSize="15dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="7dp"
+                    android:background="#BF9F62" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#00000000"
+                android:paddingLeft="38dp"
+                android:paddingRight="38dp">
+                <TextView
+                    android:id="@+id/lan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="30dp"
+                    android:text="邀请栏可不填"
+                    android:textColor="#bf9f62" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="7dp"
+                    android:background="#BF9F62" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#00000000"
+                android:paddingLeft="38dp"
+                android:paddingRight="38dp">
+
+                <TextView
+                    android:id="@+id/text_2"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="邀请码"
+                    android:textColor="@color/text_dark"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/register_first_inviterCode"
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/text_2"
+                    android:background="#00000000"
+                    android:hint="（此栏可不填）"
+                    android:singleLine="true"
+                    android:textColor="@color/text_gray"
+                    android:textColorHint="@color/text_gray"
+                    android:textSize="15dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="7dp"
+                    android:background="#BF9F62" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/register_first_treaty_img"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:background="@drawable/login_ico_slect" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="28dp"
+                    android:text="我同意"
+                    android:textColor="#999999"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/register_first_treaty_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="70dp"
+                    android:text="（美盟用户服务协议）"
+                    android:textColor="#bf9f62"
+                    android:textSize="12dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="尊敬的会员:" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="        美盟是专为高端人士打造的单身社交圈层，每位会员通过人工审核后方可入会。请您按提示完成注册流程，并提交申请，工作人员会尽快与您联系完成资质审核。" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="如有任何疑问，请致电：400-8783-520" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/register_first_nextButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="38dp"
+                android:layout_marginRight="38dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/buttonstyle_normal"
+                android:text="完成"
+                android:textColor="#ffffff"
+                android:textSize="17dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_dark"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:text="点击上方“完成”，即表示你同意"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="38dp"
+                android:paddingRight="38dp">
+                <TextView
+                    android:id="@+id/meimeng_userserver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="《美盟用户服务协议》"
+                    android:textColor="#bf9f62" />
+                <View
+                    android:layout_width="150dp"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/meimeng_userserver"
+                    android:background="#BF9F62" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

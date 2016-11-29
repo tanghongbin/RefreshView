@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:text="美盟用户服务条款"
+                android:textColor="#666666"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="22dp"
+                android:text="        一、服务条款的确认和签署"
+                android:textColor="#666666"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:text="        1.本服务条款由用户(以下称“用户”)与“美盟App（英文名称为MEIMENG App，以下简称美盟App）”的所有权人及营运权人----成都美盟信息科技有限公司(以下简称“美盟”)共同缔结，具有合同效力；"
+                android:textColor="#666666"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        3.用户应当在使用美盟服务之前认真阅读全部服务条款内容，对于服务条款中以加粗字体显示的内容，用户应重点阅读。用户确认美盟对服务条款中所含免除或限制其责任的条款已尽提示、说明义务，用户同意此等条款，用户如对服务条款内容有任何异议的，应向美盟咨询。但无论用户事实上是否在使用美盟服务之前认真阅读了本服务条款内容，只要用户通过美盟App注册程序，勾选“我同意（美盟用户服务条款），提交注册信息”，即表示用户与美盟已达成协议，本服务条款即对用户产生约束，届时用户不应以未阅读本服务条款的内容或者未获得美盟对用户问询的解答等理由，主张本服务条款无效或要求撤销本服务条款。"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        4.美盟有权根据需要不时地制订、修改本服务条款，并以美盟App内部系统通知的方式通知用户，推送通知一经发送，变更后的服务条款立即自动生效。如用户不同意相关变更，应当立即停止使用美盟服务。用户继续使用美盟服务的，即表示用户接受经修订的服务条款。"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="22dp"
+                android:text="        二、用户注册"
+                android:textColor="#666666"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        1.用户的声明与保证"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        用户承诺其为具备完全民事权利能力和完全民事行为能力的民事主体，否则，若用户不具备前述主体资格，用户及用户的监护人应承担因此而导致的一切后果，同时美盟将保留追究用户及其监护人民事、刑事责任等权利，且美盟有权注销(永久冻结)用户的美盟账号，账号内的剩余费用不予退回，并有权向用户及用户的监护人索赔。"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        2.用户注册条件"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        (1)申请注册成为美盟的会员应同时满足下列全部条件："
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        在注册之日以及此后使用美盟服务期间必须以恋爱或者婚姻为目的；"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        在注册之日以及此后使用美盟服务期间必须是单身状态，包括未婚、离异或是丧偶；"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        在注册之日必须年满18周岁以上"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        (2)为更好的享有美盟提供的服务，用户应当按照法律法规要求："
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        在注册时向美盟提供自己的真实资料，包括但不限于姓名、性别、年龄、身份证号等，随时更新登记资料，并保证诸如电子邮件地址、联系电话、联系地址、邮政编码等内容的有效性及安全性，保证美盟工作人员可以通过上述联系方式与用户取得联系，因通过这些联系方式无法与用户取得联系，导致用户在使用美盟服务过程中产生任何损失或增加费用的，应由用户完全独自承担。"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        如美盟有合理理由怀疑用户提供的资料错误、不实、过时或不完整的，美盟有权向用户发出询问或要求改正的通知，在用户收到通知后的5日内若未改正，并未做出任何解释或解释不足以说明该问题，美盟有权直接做出删除相应资料的处理，直至中止、终止对用户提供部分或全部美盟服务。美盟对此不承担任何责任，用户将承担因此产生的任何直接或间接支出。"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        3.用户注册的审核"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        (1)美盟有权对用户注册资料进行审核，美盟将对持有大陆地区身份证的用户通过全国公民身份信息系统核实该用户提供的姓名、性别、年龄及身份证号码是否相符，并与其本人形象照比对，确认其为该证件的所有者。"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        港澳台及海外用户指提交的身份证件的扫描或传真件，因目前尚无可用的核实渠道，美盟暂时无法核实其证件真伪"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        婚姻状态、职业、学历、收入等信息目前暂不能核实。"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        4.账号及账号管理"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        (1)在用户按照美盟App注册页面提示填写信息、勾选“我同意（美盟用户服务条款），提交注册信息”完成全部注册程序并经美盟审核通过后或以其他美盟允许的方式实际使用美盟服务时即成为美盟用户，美盟会向用户提供唯一编号的美盟账号(以下亦称“账号”)。"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        (2)一个用户只能同时注册并使用一个有效美盟App账号，用户可以对账号设置昵称、密码，通过该账号、密码登录美盟App，用户设置的昵称不得违反法律法规的规定、不得侵犯或涉嫌侵犯他人合法权益，否则引起的一切后果由用户独自承担，同时美盟保留取消用户资格的权利。"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        3)用户应对账号(包括昵称、密码)的安全以及对通过用户账号所实施的行为负责。如果发现任何人不当使用用户的账号或有任何其他可能危及用户账号安全的情形时，用户应当立即以有效方式通知美盟，要求美盟暂停相关服务。用户理解美盟对用户的请求采取行动需要合理时间，美盟对在采取行动前已经产生的后果(包括但不限于用户的任何损失)不承担任何责任"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        (4)用户应不断提供能增加账号安全性的个人密码保护资料。用户在丢失账号或遗忘密码后，须遵照美盟的申诉途径及时申诉请求找回账号或密码。用户可以凭初始注册资料及个人密码保护资料填写申诉单向美盟申请找回账号或密码，美盟的账号和密码找回机制仅负责识别申诉单上所填资料与系统记录资料的相符性，而无法识别申诉人是否系真正帐号使用权人。对用户因被他人冒名申诉而致的任何损失，美盟不承担任何责任，用户知晓美盟账号及密码保管责任在于用户，美盟并不承诺美盟账号丢失或密码遗忘后用户一定能通过申诉找回"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        (5)除非有法律规定或生效法律文书认定，且征得美盟的同意，否则，用户不得以任何方式转让、赠与或继承账号(与账号相关的财产权益除外)。如果美盟以合法途径获知使用者并非账号初始注册人，美盟有权回收该账号而无须向该账号使用人承担法律责任，由此带来的包括但不限于用户资料清空等损失由用户自行承担。美盟禁止用户私下有偿或无偿转让账号及其中的虚拟物品，用户应当自行承担因违反此要求而遭致的任何损失，同时美盟保留追究上述行为人法律责任的权利。"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="22dp"
+                android:text="        三、美盟服务"
+                android:textColor="#666666"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        1.美盟服务基于移动互联网，通过美盟App为用户提供线上服务，同时通过线下私人红娘和婚恋团队为用户提供人工婚恋服务。"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        (1)美盟在提供网络服务时，对部分网络服务收取一定的费用，在此情况下，美盟会在相关页面上做明确的提示。如用户没有支付该等费用，则不能使用相关的网络服务。"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        (2)美盟为用户提供的线下人工服务，须另行签订相关服务协议，详情请参阅相关服务条款"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        3.为提高美盟用户交友的成功率，美盟会通过向用户发送推送消息、电子邮件、短信或电话通知的方式向用户发送广告信（内容包括但不限于服务流程确认，其他用户希望联系、约见，活动信息和咨询，新服务或新产品的推介）；用户在美盟App注册或实际使用美盟服务，即是明确同意接收该等推送消息、电子邮件、短信或接听电话；用户如拒绝接收该类广告信，须以相同方式回复美盟明确表明拒绝接收。美盟基于用户注册填写的信息而发布的任何内容，美盟均不对该信息的真实性、合法性、有效性承担保证责任。在美盟安排的约见、交友活动过程中，因其中一位用户被另一用户的虚假信息欺骗而受到的直接或间接损失，美盟不承担任何责任。"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        4.为提高美盟用户交友的成功率，用户授权美盟将用户的交友信息在美盟App以及美盟的合作网站上进行展示或其他类似行为; 用户如拒绝，须以书面形式向美盟提出。"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        5.用户在美盟App上传或张贴的内容(包括但不限于照片、文字、交友成功用户的成功故事等)，视为用户授予美盟免许可费、非独家及可完全再授权之权利，美盟有权在全球为展示、传播及推广前述张贴内容的目的，对上述内容进行复制、修改、改写、改编、发行、翻译、创造衍生性著作、出版等。或将前述内容(部分或全部)加以散布、展示，或放入利用任何现在已知和未来开发出之形式、媒体和科技之其他著作物当中。美盟亦有权在IPTV、互联网电视展示的美盟App上使用上述内容。该使用权持续至用户书面通知美盟不得继续使用，且美盟实际收到该等书面通知时止。"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="22dp"
+                android:text="        四、用户权利"
+                android:textColor="#666666"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        用户对于自己的个人资料享有以下权利:"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        1.随时查询及请求阅览，但因极少数特殊情况(如被App加入黑名单等)无法查询及提供阅览的除外;"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        2.随时请求补充或更正，但因极少数特殊情况(如App或有关机关为司法程序保全证据等)无法补充或更正的除外;"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        3.随时请求注销账号。"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="22dp"
+                android:text="        五、用户使用规范"
+                android:textColor="#666666"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        用户应依照中国有关法律、法规以及国际法的有关规定使用美盟服务，并不得实施以下行为："
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        1.用户不得利用美盟App制作、发表、复制、传送、传播、储存等以下信息："
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        (1)违反宪法确定的基本原则的；"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        (2)危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一的；。"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        (3)损害国家荣誉和利益的；"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        (4)煽动民族仇恨、民族歧视，破坏民族团结的；"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        (5)破坏国家宗教政策，宣扬邪教和封建迷信的；"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        (6)散布谣言，扰乱社会秩序，破坏社会稳定的；"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        (7)散布淫秽、色情、赌博、暴力、恐怖或者教唆犯罪的；"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        (8)含有虚假、有害、胁迫、侵害他人隐私、粗俗、猥亵、骚扰、侵害、中伤、侮辱或者诽谤他人，其他有悖道德、令人反感的内容；"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        (9)煽动非法集会、结社、游行、示威、聚众扰乱社会秩序的；"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        (10)以非法民间组织名义活动的；"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        (11)侵犯他人知识产权、商业秘密或其他合法权利的；"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="       (12)含有法律、行政法规禁止的其他内容的。"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="       2.用户不得利用美盟服务误导、欺骗他人。"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        3.用户不得故意制作、传播手机病毒等破坏性程序或从事其他任何危害移动互联网信息网络安全的行为。"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        4.用户不得以任何方式干扰美盟的服务"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        5.用户须对自己在使用美盟服务过程中的行为承担法律责任。用户承担法律责任的形式包括但不限于："
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        (1)对受到侵害者进行赔偿，以及在美盟公司首先承担了因用户行为导致的行政处罚或侵权损害赔偿责任后，用户应给予美盟公司等额的赔偿。"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#666666"
+                android:text="        (2)用户理解并接受，如果美盟发现其通过美盟App传输的信息明显属于违反法律、法规及本服务条款规定的内容之一，美盟有义务立即停止传输，保存有关记录，向国家有关机关报告，并且删除含有该内容的地址、目录。"
+                android:textSize="12dp" />
+            <include layout="@layout/service_clause_more"></include>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

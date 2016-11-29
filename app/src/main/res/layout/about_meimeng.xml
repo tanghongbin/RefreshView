@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:id="@+id/aboutmeimeng_pic"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:id="@+id/rela_1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/aboutmeimeng_pic"
+                android:background="@color/backgroundcolor">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="官方网站"
+                    android:textColor="#999999"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="www.meimeng.me"
+                    android:textColor="#999999"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/rela_1"
+                android:background="@color/white" />
+
+            <RelativeLayout
+                android:id="@+id/rela_2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/img"
+                android:background="@color/backgroundcolor">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="客服电话"
+                    android:textColor="#999999"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="400-8783-520"
+                    android:textColor="#dab774"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/aboutmeimeng_pic1"
+                android:layout_width="fill_parent"
+                android:layout_height="1650dp"
+                android:layout_below="@+id/rela_2"
+                android:scaleType="fitXY" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

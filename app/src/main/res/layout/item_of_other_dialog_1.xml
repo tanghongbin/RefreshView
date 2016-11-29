@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="160dp"
+        android:background="@drawable/dialog_back"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:lineSpacingExtra="5dp"
+                android:text="你和TA尚未互相喜欢，无法开通聊天。\n可拨打私人红娘电话，为您邀约："
+                android:textSize="15sp"
+                android:textColor="#666666"
+                />
+            <TextView
+                android:id="@+id/other_telphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_centerInParent="true"
+                android:layout_below="@id/top"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dddddd"/>
+        <LinearLayout
+            android:id="@+id/prompt_btn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/dialog_back_s"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/item_of_other_cancle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:text="取消"
+                android:textColor="@color/text"/>
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:background="#dddddd"
+                />
+            <TextView
+                android:id="@+id/item_of_other_tel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:text="拨号"
+                android:textColor="@color/text"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

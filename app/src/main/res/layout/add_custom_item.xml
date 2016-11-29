@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="60px"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="30px"
+        android:layout_height="30px"
+        android:id="@+id/add_custom_image_view"
+        android:src="@drawable/add"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20px"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自定义"
+        android:textColor="@color/black"
+        android:textSize="36px"
+        android:id="@+id/add_custom_text_view"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/add_custom_image_view"
+        android:layout_toEndOf="@+id/add_custom_image_view"
+        android:layout_marginLeft="10px"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="您最多只能选择9项！"
+        android:textColor="@color/red"
+        android:textSize="36px"
+        android:id="@+id/item_add_tips_text_view"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

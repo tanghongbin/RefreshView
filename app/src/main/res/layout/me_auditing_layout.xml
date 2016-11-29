@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="200px"
+    android:layout_height="200px"
+    android:background="#7F666666"
+    android:visibility="gone"
+    android:id="@+id/me_auditing_layout">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="待审核"
+        android:textColor="#FFFFFF"
+        android:textSize="32px"
+        android:gravity="center" />
+</LinearLayout>

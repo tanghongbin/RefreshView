@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar"></include>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"
+        android:layout_marginTop="10dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+
+        <TextView
+            android:id="@+id/setting_changepsw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:onClick="onClick"
+            android:padding="15dp"
+            android:text="修改密码"
+            android:textColor="@color/text_dark" />
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="17dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/btn_rightarrow_2" />
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+    <TextView
+        android:id="@+id/setting_clean_cache_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:padding="15dp"
+        android:text="清除缓存"
+        android:textColor="@color/text_dark" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="17dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/btn_rightarrow_2" />
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/sound"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:onClick="onClick"
+            android:padding="15dp"
+            android:text="声音"
+            android:textColor="@color/text_dark" />
+
+        <RelativeLayout
+            android:id="@+id/issound_rl"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            >
+               <ImageView
+                android:id="@+id/issound_image"
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:src="@drawable/selector_btn_left_issound"
+                android:layout_centerInParent="true"
+                   />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/shake"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:onClick="onClick"
+            android:padding="15dp"
+            android:text="震动"
+            android:textColor="@color/text_dark" />
+         <RelativeLayout
+             android:id="@+id/isshake_rl"
+             android:layout_width="50dp"
+             android:layout_height="match_parent"
+             android:layout_centerVertical="true"
+             android:layout_alignParentRight="true"
+             >
+
+        <ImageView
+            android:id="@+id/isshake_image"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:src="@drawable/selector_btn_left_issound"
+           android:layout_centerInParent="true"
+            />
+         </RelativeLayout>
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"
+        android:layout_marginTop="35dp"/>
+    <TextView
+        android:id="@+id/setting_exit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="退出当前账号"
+        android:textColor="@color/red" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"
+        />
+</LinearLayout>

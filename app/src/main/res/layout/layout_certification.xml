@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/center_color">
+
+    <include layout="@layout/titlebarlayout"></include>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="#dddddd"/>
+
+    <RelativeLayout
+        android:id="@+id/Identify_User_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/User_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="身份认证"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/center_title_textsize"
+            android:textColor="@color/center_title_textcolor"
+            />
+        <TextView
+            android:id="@+id/Identify_User_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/User_text"
+            android:layout_marginLeft="25dp"
+            android:gravity="center_vertical"
+            android:text="/待认证"
+            android:textSize="@dimen/center_title_textsize"
+            android:textColor="@color/center_content_textcolor"/>
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="30dp"
+            android:src="@drawable/nav_back"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="#dddddd"/>
+
+    <RelativeLayout
+        android:id="@+id/Identify_Marriage_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/Marriage_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="单身承诺"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/center_title_textsize"
+            android:textColor="@color/center_title_textcolor"
+            />
+        <TextView
+            android:id="@+id/Identify_Marriage_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/Marriage_text"
+            android:layout_marginLeft="25dp"
+            android:gravity="center_vertical"
+            android:text="/待认证"
+            android:textSize="@dimen/center_title_textsize"
+            android:textColor="@color/center_content_textcolor"/>
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="30dp"
+            android:src="@drawable/nav_back"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="#dddddd"/>
+    <RelativeLayout
+        android:id="@+id/Identify_Money_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/Money_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="资产认证"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/center_title_textsize"
+            android:textColor="@color/center_title_textcolor"
+            />
+        <TextView
+            android:id="@+id/Identify_Money_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/Money_text"
+            android:layout_marginLeft="25dp"
+            android:gravity="center_vertical"
+            android:text="/待认证"
+            android:textSize="@dimen/center_title_textsize"
+            android:textColor="@color/center_content_textcolor"/>
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="30dp"
+            android:src="@drawable/nav_back"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="#dddddd"/>
+    <RelativeLayout
+        android:id="@+id/Identify_Work_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/Work_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="职位认证"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/center_title_textsize"
+            android:textColor="@color/center_title_textcolor"
+            />
+        <TextView
+            android:id="@+id/Identify_Work_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/Work_text"
+            android:layout_marginLeft="25dp"
+            android:gravity="center_vertical"
+            android:text="/待认证"
+            android:textSize="@dimen/center_title_textsize"
+            android:textColor="@color/center_content_textcolor"/>
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="30dp"
+            android:src="@drawable/nav_back"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="#dddddd"/>
+    <RelativeLayout
+        android:id="@+id/Identify_Education_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/Education_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="学历认证"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/center_title_textsize"
+            android:textColor="@color/center_title_textcolor"
+            />
+        <TextView
+            android:id="@+id/Identify_Education_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/Education_text"
+            android:layout_marginLeft="25dp"
+            android:gravity="center_vertical"
+            android:text="/待认证"
+            android:textSize="@dimen/center_title_textsize"
+            android:textColor="@color/center_content_textcolor"/>
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="30dp"
+            android:src="@drawable/nav_back"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="#dddddd"/>
+
+</LinearLayout>

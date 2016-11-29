@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="375dp"
+            android:src="@drawable/meimeng_ico_user_missing"
+            android:id="@+id/others_missing_image_view"/>
+        <com.example.com.meimeng.custom.MyViewPager
+            android:id="@+id/pager"
+            android:layout_width="fill_parent"
+            android:layout_height="375dp"
+            android:layout_weight="1"
+
+            />
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/indicator"
+            android:padding="10dip"
+            android:layout_height="50dp"
+            android:layout_width="fill_parent"
+            android:layout_alignBottom="@+id/pager"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/indicator"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/others_vote_image_button"
+                android:layout_marginRight="20dp"
+                android:scaleType="centerCrop"
+                android:background="#00000000"
+                android:src="@drawable/icon_praise"/>
+            <!--<ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:scaleType="centerCrop"
+                android:background="#00000000"
+                android:id="@+id/others_follow_image_button"
+                android:src="@drawable/icon_concern"/>-->
+        </LinearLayout>
+       <!-- <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/icon_lock_2x"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+                android:id="@+id/others_unlock_image_view"/>
+        </LinearLayout>-->
+
+    </RelativeLayout>
+</RelativeLayout>

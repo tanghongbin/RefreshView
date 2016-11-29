@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<include layout="@layout/titlebar"></include>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#eeeeee"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/friends_manage_two_layout"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/friends_manage_two_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="互相喜欢"
+                android:textColor="@color/like_text_color"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/friends_manage_two_image_view"
+                android:layout_width="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/black_text_color"
+                android:visibility="gone" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/friends_manage_my_like_layout"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/friends_manage_my_like_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="我喜欢的"
+                android:textColor="@color/black_text_color"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/friends_manage_my_like_image_view"
+                android:layout_width="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/black_text_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/friends_manage_like_me_layout"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/friends_manage_like_me_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="喜欢我的"
+                android:textColor="@color/like_text_color"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/friends_manage_like_me_image_view"
+                android:layout_width="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/black_text_color"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/friends_manage_fragment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eeeeee"
+        android:orientation="horizontal"></LinearLayout>
+</LinearLayout>

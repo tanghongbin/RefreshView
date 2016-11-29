@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearlayout_matchmaker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
+
+        <ImageView
+            android:id="@+id/imageview_matchmaker"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:clickable="false"
+            android:src="@drawable/top_ico_matchmaker" />
+
+        <TextView
+            android:id="@+id/text_matchmaker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:clickable="false"
+            android:text="私人红娘"
+            android:textColor="@color/text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageview_event"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:clickable="false"
+            android:src="@drawable/top_ico_event" />
+
+        <TextView
+            android:id="@+id/text_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:clickable="false"
+            android:text="私人邀约"
+            android:textColor="@color/text" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearlayout_twoLove"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageview_twoLov"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="15dp"
+            android:clickable="false"
+            android:src="@drawable/like_ico" />
+
+        <TextView
+            android:id="@+id/text_twoLov"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:clickable="false"
+            android:text="两情相悦"
+            android:textColor="@color/text" />
+    </LinearLayout>
+
+</LinearLayout>

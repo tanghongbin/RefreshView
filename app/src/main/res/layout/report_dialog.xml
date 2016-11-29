@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="395dp"
+
+    android:background="#dddddd"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="#00000000" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#dddddd"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/report_text1"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="色情交易"
+            android:textColor="#bf9f62"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dddddd" />
+
+        <TextView
+            android:id="@+id/report_text2"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="头像、资料虚假或假冒"
+            android:textColor="#bf9f62"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dddddd" />
+
+        <TextView
+            android:id="@+id/report_text3"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="婚托、饭托、酒托"
+            android:textColor="#bf9f62"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dddddd" />
+
+        <TextView
+            android:id="@+id/report_text4"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="骚扰广告"
+            android:textColor="#bf9f62"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dddddd" />
+
+        <TextView
+            android:id="@+id/report_text5"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="诈骗钱财、虚假中奖信息"
+            android:textColor="#bf9f62"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dddddd" />
+
+
+        <TextView
+            android:id="@+id/report_text6"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:textColor="#bf9f62"
+            android:text="其他"></TextView>
+
+
+        <TextView
+            android:id="@+id/report_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:background="#f6f6f6"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#bf9f62"
+            android:textSize="15sp" />
+    </LinearLayout>
+</RelativeLayout>

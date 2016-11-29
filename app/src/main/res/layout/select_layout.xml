@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/select_layout"
+    android:layout_width="match_parent"
+    android:layout_height="195dp"
+    android:layout_alignParentBottom="true"
+    android:background="#ffffff"
+    android:gravity="center_horizontal"
+
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--title_button-->
+    <RelativeLayout
+        android:id="@+id/select_layout_button"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:background="@color/backgroundcolor"
+        >
+
+        <TextView
+            android:id="@+id/select_cancel_text"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:paddingLeft="22dp"
+            android:text="取消"
+            android:textColor="@color/select_text_color"
+            android:textSize="@dimen/select_text_size" />
+        <TextView
+            android:id="@+id/select_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="地区"
+            android:layout_centerHorizontal="true"
+            android:textColor="#666666"
+            android:textSize="@dimen/select_text_size" />
+        <TextView
+            android:id="@+id/select_sure_text"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:paddingRight="22dp"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/select_text_color"
+            android:textSize="@dimen/select_text_size" />
+    </RelativeLayout>
+
+    <!--选择区-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <RelativeLayout
+                 android:id="@+id/layout_picker_one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/isdefault"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal"
+                    >
+                <com.example.com.meimeng.custom.PickerView
+                    android:id="@+id/picker_one_a"
+
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_centerVertical="true"
+                    android:layout_height="98dp" />
+
+                    <ImageView
+                        android:id="@+id/line"
+                        android:layout_width="8dp"
+                        android:layout_height="3dp"
+                        android:background="@color/text"
+                        android:layout_gravity="center_vertical"
+                        android:visibility="gone"/>
+
+                <com.example.com.meimeng.custom.PickerView
+                    android:id="@+id/picker_one_b"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_weight="1"
+                    android:layout_centerVertical="true"
+                    android:layout_height="98dp" />
+
+                    <TextView
+                        android:id="@+id/CM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_gravity="center_vertical"
+                        android:text="CM"
+                        android:textSize="18dp"
+                        android:textColor="@color/text"/>
+
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="1dp"
+                    android:src="@color/select_layout_line_color"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="55dp"/>
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="1dp"
+                    android:src="@color/select_layout_line_color"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="55dp"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

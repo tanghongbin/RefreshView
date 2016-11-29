@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <include
+        android:id="@+id/other_story_title_layout"
+        layout="@layout/titlebar"></include>
+
+    <include
+        android:id="@+id/other_story_bottom_layout"
+        layout="@layout/bottom_story"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/other_story_bottom_layout"
+        android:layout_below="@id/other_story_title_layout"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/other_story_user_info_layout"
+                android:layout_width="match_parent"
+                android:layout_height="436dp"
+                android:background="@color/white"
+                android:paddingTop="10dp">
+
+                <ImageView
+                    android:id="@+id/other_story_cover_image_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="375dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/meimeng_ico_index_missing" />
+                <View
+                    android:layout_below="@id/other_story_cover_image_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#dab774" />
+
+                <com.example.com.meimeng.custom.CircleImageView
+                    android:id="@+id/other_header_image_view"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="18dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/meimeng_ico_user_missing"
+                    app:border_color="#bf9f62"
+                    app:border_width="1dp" />
+
+
+                <TextView
+                    android:id="@+id/nickname_textView_story"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/other_header_image_view"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/other_header_image_view"
+                    android:textColor="@color/white_text_color"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/location_image_view"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignBottom="@id/nickname_textView_story"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/nickname_textView_story"
+                    android:src="@drawable/address_ico" />
+
+                <TextView
+                    android:id="@+id/city_text_view_story"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/location_image_view"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/location_image_view"
+                    android:textColor="@color/text_dark"
+                    android:textSize="12sp"
+                    android:text=""/>
+                <TextView
+                    android:id="@+id/lastlogintime_text_view_story"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/location_image_view"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/city_text_view_story"
+                    android:textColor="@color/text_dark"
+                    android:textSize="12sp"
+                    android:text=""/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/other_header_image_view"
+                    android:layout_alignParentRight="true"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+
+                    <TableRow
+                        android:id="@+id/like_story"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="15dp"
+                        android:layout_toLeftOf="@id/iamgeview_recommend"
+                        android:gravity="end">
+
+                        <ImageView
+                            android:id="@+id/like_story_image_view"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10dp" />
+
+                        <TextView
+                            android:id="@+id/like_story_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/white_text_color"
+                            android:textSize="15sp"
+                            android:text=""/>
+                    </TableRow>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#dddddd"
+                android:orientation="vertical">
+
+                <com.example.com.meimeng.custom.ScrollViewWithListView
+                    android:id="@+id/other_story_list_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:cacheColorHint="@color/color_transparent"
+                    android:divider="#dddddd"
+                    android:dividerHeight="5dp"
+                    android:listSelector="@color/color_transparent"></com.example.com.meimeng.custom.ScrollViewWithListView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/dialog_layout"></include>
+</RelativeLayout>

@@ -1,0 +1,33 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.2.3'
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.4'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+allprojects {
+    repositories {
+        jcenter()
+        mavenCentral()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+    }
+}
+
+dependencies {
+    apply plugin: 'java'
+    compile files('leanchatlib/libs/android-async-http-1.4.6.jar')
+    compile files('leanchatlib/libs/avoscloud-sdk-v3.1.4.jar')
+    compile files('leanchatlib/libs/avoscloud-push-v3.1.4.jar')
+    compile files('leanchatlib/libs/eventbus-2.4.0.jar')
+    compile files('leanchatlib/libs/fastjson-1.1.37-leancloud.jar')
+    compile files('leanchatlib/libs/Java-WebSocket-1.2.0-leancloud.jar')
+    compile files('leanchatlib/libs/prettytime-3.2.5.Final.jar')
+    compile files('leanchatlib/libs/universal-image-loader-1.9.3.jar')
+}

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/chatAddLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/chat_bottom_more_height"
+    android:orientation="horizontal"
+    android:paddingTop="10dp"
+    android:visibility="gone"
+    android:weightSum="4">
+
+    <!--chat_bottom_add_picture_selector-->
+    <TextView
+        android:id="@+id/addImageBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:drawablePadding="10dp"
+        android:drawableTop="@drawable/picture_normal"
+        android:gravity="center"
+        android:text="@string/chat_bottom_picture"
+        android:textSize="@dimen/chat_btn_textsize"/>
+
+    <!--chat_bottom_add_camera_selector-->
+    <TextView
+        android:id="@+id/addCameraBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:drawablePadding="10dp"
+        android:drawableTop="@drawable/camera_normal"
+        android:gravity="center"
+        android:text="@string/chat_bottom_camera"
+        android:textSize="@dimen/chat_btn_textsize"/>
+
+    <TextView
+        android:id="@+id/addgiftBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:drawablePadding="10dp"
+        android:drawableTop="@drawable/gift_normal"
+        android:gravity="center"
+        android:text="@string/chat_bottom_gift"
+        android:textSize="@dimen/chat_btn_textsize"/>
+
+    <TextView
+        android:id="@+id/addLocationBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:drawablePadding="10dp"
+        android:drawableTop="@drawable/chat_button_add_location_selector"
+        android:gravity="center"
+        android:text="@string/chat_bottom_location" />
+
+</LinearLayout>

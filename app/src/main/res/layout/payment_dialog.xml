@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="225dp"
+    android:layout_height="140dp"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:background="@drawable/dialog_back"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/dialog_cancel_pay"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:src="@drawable/event_pay_ico_close" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="温馨提示"
+        android:textColor="@color/text_dark"
+        android:textSize="20sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:text="报名成功"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/text_dark"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dddddd"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/background_home"
+        android:padding="5dp"
+        android:layout_height="45dp">
+
+        <Button
+            android:id="@+id/dialog_sure"
+            android:layout_width="80dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_height="50dp"
+            android:background="@color/background_home"
+            android:textColor="@color/text"
+            android:text="支付"
+            android:textSize="15dp"
+            />
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:background="#dddddd"
+            android:layout_centerHorizontal="true"
+            />
+        <Button
+            android:id="@+id/dialog_cancle"
+            android:layout_width="80dp"
+            android:layout_marginLeft="10dp"
+            android:text="取消"
+            android:layout_height="50dp"
+            android:background="@color/background_home"
+            android:textColor="@color/text"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+</LinearLayout>

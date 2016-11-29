@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/titlebar"></include>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="220dp"
+                    android:background="@drawable/intiate_event_bg">
+
+                    <ImageView
+                        android:id="@+id/event_initiate_picture_image_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:scaleType="centerCrop" />
+
+                    <ImageButton
+                        android:id="@+id/event_initiate_uploadpicture"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:background="#00000000"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/upload_cover_pic"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/event_initiate_title_side"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    >
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="主题"
+                        android:textColor="@color/text_dark"
+                        android:textSize="15dp" />
+
+
+
+                    <TextView
+                        android:id="@+id/event_initiate_title"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:hint="请输入活动主题（15字以内）"
+                        android:textColorHint="@color/text_gray"
+                        android:textColor="@color/text_gray"
+                        android:layout_marginRight="10dp"
+                        android:textSize="15dp"
+                        android:gravity="right"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        />
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="15dp"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/btn_rightarrow_2" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#dddddd"></View>
+
+                <RelativeLayout
+                    android:id="@+id/event_initiate_start_time_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="时间"
+                        android:textColor="@color/text_dark"
+                        android:textSize="15dp" />
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/btn_rightarrow_2" />
+
+                    <TextView
+                        android:id="@+id/event_initiate_startTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="33dp"
+                        android:hint="选择"
+                        android:textColor="@color/text_gray"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#dddddd"></View>
+
+                <RelativeLayout
+                    android:id="@+id/event_initiate_placeDetailbase_side"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="地点"
+                        android:textColor="@color/text_dark"
+                        android:textSize="15dp" />
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/btn_rightarrow_2" />
+
+                    <TextView
+                        android:id="@+id/event_initiate_placeDetailbase"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="33dp"
+                        android:text="地点选择"
+                        android:textColor="@color/text_gray"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#dddddd"></View>
+
+                <LinearLayout
+                    android:id="@+id/event_initiate_placeDetail_side"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="详细地点"
+                        android:textColor="@color/text_dark"
+                        android:textSize="15dp" />
+                    <TextView
+                        android:id="@+id/event_initiate_placeDetail"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:hint="请输入邀约详细地点"
+                        android:textColorHint="@color/text_gray"
+                        android:textColor="@color/text_gray"
+                        android:textSize="15dp"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:layout_marginRight="10dp"
+                        />
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/btn_rightarrow_2" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#dddddd"></View>
+
+                <LinearLayout
+                    android:id="@+id/event_initiate_describe_side"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="详情"
+                        android:textColor="@color/text_dark"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/event_initiate_describe"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="请编辑活动详情"
+                        android:textColorHint="@color/text_gray"
+                        android:textColor="@color/text_gray"
+                        android:textSize="15dp"
+                        android:gravity="right"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:layout_marginRight="10dp"
+                        />
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="15dp"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/btn_rightarrow_2" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+    <include layout="@layout/activity_time_wheel"></include>
+
+    <include layout="@layout/dialog_layout"></include>
+
+</RelativeLayout>

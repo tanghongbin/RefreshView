@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dddddd"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:background="@color/white">
+
+                <com.example.com.meimeng.custom.RoundCornerImageView
+                    android:id="@+id/vip_center_header"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/meimeng_ico_user_missing"
+                    app:border_color="#dab774"
+                    app:border_width="1dp" />
+
+                <TextView
+                    android:id="@+id/vip_center_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/vip_center_header"
+                    android:textColor="@color/gold_textcolor"
+                    android:textSize="17dp" />
+
+                <ImageView
+                    android:id="@+id/vip_center_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignBottom="@+id/vip_center_header"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/vip_center_header"
+
+                    />
+
+                <TextView
+                    android:id="@+id/vip_center_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/vip_center_icon"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_toRightOf="@id/vip_center_icon"
+                    android:text=""
+                    android:textColor="#666666"
+                    android:textSize="13dp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="8dp" />
+
+            <RelativeLayout
+                android:id="@+id/vip_center_re"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:gravity="center_vertical"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/vip_center_server1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="会员免费服务"
+                    android:layout_toRightOf="@+id/vip_center_text"
+                    android:textColor="@color/gold_textcolor"
+                    android:textSize="@dimen/vip_center_title_textsize" />
+
+                <ImageView
+                    android:id="@+id/vip_center2_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/vip_0" />
+
+                <TextView
+                    android:id="@+id/vip_center_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/vip_center_server1"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/vip_center2_icon"
+                    android:text="普通会籍"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/vip_center_title_textsize" />
+
+                <ImageView
+                    android:id="@+id/vip_center_btn1"
+                    android:layout_width="20dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+
+                    android:src="@drawable/btn_downarrow_2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/vip_center_btn1"
+                    android:text="免费"
+                    android:textColor="@color/gold_textcolor"
+                    android:textSize="@dimen/vip_center_title_textsize" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/vid_center_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/cutline" />
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/vip_center_conten_padding"
+                android:paddingRight="@dimen/vip_center_conten_padding"
+                android:paddingTop="@dimen/vip_center_conten_paddin_tb"
+                android:paddingBottom="@dimen/vip_center_conten_paddin_tb"
+                >
+
+
+
+                <TextView
+                    android:id="@+id/text_mormal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="5dp"
+                    android:textColor="#666666"
+                android:textSize="@dimen/vip_center_conten_textsize" />
+            </LinearLayout>
+                <!-- android:text="您进入“美盟App”后，可以浏览和喜欢所有会员，每天可以选择1位“相互喜欢”的异性，开通聊天通道；同时，你可以通过完善资料(2次)、编辑个人故事(2次)、提交认证(每项2次)、邀请朋友注册(每人2次)、获得更多的免费开通聊天通道机会。"-->
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/cutline" />
+
+            <!--<include layout="@layout/vip_center2"
+                />-->
+
+            <include layout="@layout/vip_center3" />
+
+            <!--<include layout="@layout/vip_center4" />-->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="100dp">
+
+                <ImageView
+                    android:id="@+id/about_logo"
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/slogen3x" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+     />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

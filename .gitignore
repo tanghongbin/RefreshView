@@ -1,0 +1,12 @@
+.gradle/
+.idea/
+android-flowlayout/build/
+android-flowlayout/android-flowlayout.iml
+app/build/
+chatmessage/build/
+chatmessage/chatmessage.iml
+leanchatlib/build/
+leanchatlib/leanchatlib.iml
+library/build
+tools/build
+ViewPagerIndicator/build

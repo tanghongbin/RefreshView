@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_weight="1"
+        >
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/select_layout"
+        android:layout_width="match_parent"
+        android:layout_height="195dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:gravity="center_horizontal"
+
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <!--title_button-->
+            <RelativeLayout
+                android:id="@+id/select_layout_button"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:background="#f6f6f6"
+                >
+
+                <TextView
+                    android:id="@+id/birthday_register_cancel_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:paddingLeft="22dp"
+                    android:text="取消"
+                    android:textColor="@color/select_text_color"
+                    android:textSize="@dimen/select_text_size" />
+                <TextView
+                    android:id="@+id/birthday_register_title_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="生日"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/select_text_size"
+                    android:layout_centerInParent="true"
+                    />
+
+                <TextView
+                    android:id="@+id/birthday_register_sure_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="22dp"
+                    android:gravity="center"
+                    android:text="确定"
+                    android:textColor="@color/select_text_color"
+                    android:textSize="@dimen/select_text_size" />
+            </RelativeLayout>
+
+            <!--选择区-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible"
+                >
+                <com.example.com.meimeng.custom.ThreeWheelView
+                    android:id="@+id/birthday_register_wheel_picker"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="visible"></com.example.com.meimeng.custom.ThreeWheelView>
+
+                <com.example.com.meimeng.custom.WheelView
+                    android:id="@+id/person_height_wheel_view"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    app:itemNumber="3"
+                    app:lineColor="@color/bar_pressed"
+                    app:maskHight="32dp"
+                    app:noEmpty="true"
+                    app:lineHeight="1dp"
+                    app:normalTextColor="#bf9f62"
+                    app:normalTextSize="15sp"
+                    app:selectedTextColor="@color/bar_pressed"
+                    app:selectedTextSize="18sp"
+                    app:unitHight="40dp"
+                    android:visibility="gone"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                ></LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

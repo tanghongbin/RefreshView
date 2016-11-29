@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/office_event_detail_image"
+        android:layout_width="match_parent"
+        android:layout_height="232dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/meimeng_ico_index_missing" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/office_event_detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/office_event_title_textcolor"
+
+            android:textSize="@dimen/office_event_detail_title_textsize"
+            />
+
+        <!--<TextView-->
+            <!--android:id="@+id/office_event_detail_state"-->
+            <!--android:layout_width="74dp"-->
+            <!--android:layout_height="22dp"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_marginTop="19dp"-->
+            <!--android:background="@drawable/text_4_shape"-->
+            <!--android:gravity="center"-->
+            <!--android:text="即将开始"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="12dp" />-->
+
+        <!--<View-->
+            <!--android:id="@+id/view"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0.5dp"-->
+            <!--android:layout_alignEnd="@+id/office_event_detail_state"-->
+            <!--android:layout_below="@+id/office_event_detail_title"-->
+            <!--android:layout_marginTop="19dp"-->
+            <!--android:background="@color/item_bac">-->
+
+        <!--</View>-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/office_event_detail_image_location"-->
+            <!--android:layout_width="15dp"-->
+            <!--android:layout_height="15dp"-->
+            <!--android:layout_alignStart="@+id/office_event_detail_title"-->
+            <!--android:layout_below="@+id/view"-->
+            <!--android:layout_marginTop="12dp"-->
+            <!--android:src="@drawable/event_ico_location" />-->
+
+        <TextView
+            android:id="@+id/office_event_detail_text_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/office_detail_date"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/office_event_detail_textcolor"
+            android:textSize="@dimen/office_event_detail_textsize" />
+
+        <!--PlaceDetail-->
+        <TextView
+            android:id="@+id/office_event_detail_text_PlaceDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/office_event_detail_text_location"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/office_event_detail_textcolor"
+
+            android:textSize="@dimen/office_event_detail_textsize" />
+
+
+
+        <TextView
+            android:id="@+id/office_detail_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/office_event_detail_title"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/office_event_detail_textcolor"
+            android:textSize="@dimen/office_detail_date_textsize" />
+
+        <!--<ImageView-->
+            <!--android:id="@+id/icon_num"-->
+            <!--android:layout_width="15dp"-->
+            <!--android:layout_height="15dp"-->
+            <!--android:layout_alignStart="@+id/icon_time"-->
+            <!--android:layout_below="@+id/office_detail_date"-->
+
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:src="@drawable/event_ico_number" />-->
+
+        <TextView
+            android:id="@+id/office_detail_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/office_detail_attend_button"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="60dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/office_detail_cost_textcolor"
+            android:textSize="@dimen/office_detail_num_textsize" />
+
+        <!--<ImageView-->
+            <!--android:id="@+id/event_detail_cost_image"-->
+            <!--android:layout_width="15dp"-->
+            <!--android:layout_height="15dp"-->
+            <!--android:layout_alignStart="@+id/icon_num"-->
+            <!--android:layout_below="@+id/office_detail_num"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:src="@drawable/event_detail_cost" />-->
+
+        <TextView
+            android:id="@+id/office_detail_cost_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/office_event_detail_text_PlaceDetail"
+            android:layout_marginTop="34dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/office_detail_cost_textcolor"
+            android:textSize="@dimen/office_detail_cost_textsize" />
+
+
+        <Button
+            android:id="@+id/office_detail_attend_button"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/office_detail_cost_text"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/explore_screen_btn_background"
+            android:gravity="center"
+            android:text="立即参加"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/office_detail_attend_button_textsize" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingBottom="15dp"
+        android:text="活动介绍"
+        android:textStyle="bold"
+        android:textColor="@color/office_event_detail_textcolor"
+        android:textSize="@dimen/event_referral_text" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/item_bac"></View>
+    <!--活动介绍区-->
+    <LinearLayout
+        android:id="@+id/event_describe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="vertical">
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dddddd" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/about_logo"
+            android:layout_width="230dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/slogen3x" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@color/white" />
+
+
+</LinearLayout>
+

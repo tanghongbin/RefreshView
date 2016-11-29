@@ -1,0 +1,59 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="home_activity_title">17sp</dimen>
+    <dimen name="titlebar_height">44dp</dimen>
+    <dimen name="event_text_size">16dp</dimen>
+    <dimen name="titlebar_text_size">18dp</dimen>
+    <dimen name="select_text_size">15dp</dimen>
+
+    <!--发现页-->
+    <dimen name="text_name_explore_size">17dp</dimen>
+    <dimen name="text_age_explore_size">17dp</dimen>
+
+    <!--发现搜索页-->
+    <dimen name="explore_screen_option_text_size">16dp</dimen>
+    <dimen name="explore_screen_data_text_size">16dp</dimen>
+    <dimen name="explore_screen_btn_text_size">16dp</dimen>
+    <dimen name="explore_screen_edit_text_size">12dp</dimen>
+
+    <!--活动页-->
+    <dimen name="event_item_image_height">240dp</dimen>
+    <dimen name="event_content_rl_marginTop">60dp</dimen>
+    <dimen name="event_content_rl_height">60dp</dimen>
+    <dimen name="event_item_titl_textsize">19dp</dimen>
+    
+    <dimen name="item_text_location_textsize">16dp</dimen>
+    <dimen name="event_item_text_date_textsize">16dp</dimen>
+    <dimen name="event_item_state_textsize">15dp</dimen>
+
+    <!--活动详情页-->
+    <dimen name="office_event_detail_title_textsize">22dp</dimen>
+    <dimen name="office_detail_date_textsize">18dp</dimen>
+    <dimen name="office_event_detail_textsize">15dp</dimen>
+    <dimen name="office_detail_cost_textsize">21dp</dimen>
+    <dimen name="office_detail_attend_button_textsize">18dp</dimen>
+    <dimen name="office_detail_num_textsize">14dp</dimen>
+    <dimen name="event_referral_text">22dp</dimen>
+
+    <!--我的活动页-->
+    <dimen name="myevent_title_textsize">15dp</dimen>
+    <dimen name="myevent_default_textsize">13dp</dimen>
+    <dimen name="myevent_btn_textsize">15sp</dimen>
+
+
+    <!--会员中心页-->
+    <dimen name="vip_center_title_textsize">15dp</dimen>
+    <dimen name="vip_center_conten_textsize">15dp</dimen>
+    <dimen name="vip_center_btn_textsize">16dp</dimen>
+    <dimen name="vip_center_conten_padding">36dp</dimen>
+    <dimen name="vip_center_conten_paddin_tb">20dp</dimen>
+
+    <!--认证中心页-->
+    <dimen name="center_title_textsize">15dp</dimen>
+
+    <!--分享菜单-->
+    <dimen name="share_textsize">12dp</dimen>
+
+</resources>

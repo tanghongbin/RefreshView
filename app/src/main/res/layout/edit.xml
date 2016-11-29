@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dddddd"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/black"
+        >
+        <TextView
+            android:id="@+id/edit_cancel_text"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/edit_text"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:text="编辑"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            />
+        <TextView
+            android:id="@+id/edit_save_text"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+    <EditText
+        android:singleLine="true"
+        android:id="@+id/edit_name_edit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:maxLength="20"
+        android:gravity="center_vertical"
+        android:hint="请输入标题（不超过20字）"
+        android:textColorHint="#999999"
+        />
+    <EditText
+        android:id="@+id/edit_content_edit"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:gravity="left|top"
+        android:hint="请输入故事内容..."
+        android:textColorHint="#999999"
+        />
+
+
+
+</LinearLayout>

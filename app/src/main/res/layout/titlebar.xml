@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/titlebar_height"
+    android:background="@color/background_home"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/title_left_arrow_layout"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/title_left_arrow_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_nav_back"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="首页"
+        android:textColor="@color/text"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/bow_arrow_image_view"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/bow_arrow" />
+
+    <TextView
+        android:id="@+id/title_sure_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:text="确定"
+        android:textColor="@color/text"
+        android:textSize="15sp"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

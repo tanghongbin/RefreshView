@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/vip_center_re3"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/vip_center_server1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/vip_center3_text"
+            android:text="婚恋定制服务"
+            android:textColor="@color/gold_textcolor"
+            android:textSize="@dimen/vip_center_title_textsize" />
+
+        <ImageView
+            android:id="@+id/vip_center2_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+
+
+            android:src="@drawable/vip_2" />
+
+        <TextView
+            android:id="@+id/vip_center3_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/vip_center_server1"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/vip_center2_icon"
+            android:text="金牌会籍"
+            android:textColor="#666666"
+            android:textSize="@dimen/vip_center_title_textsize" />
+
+        <ImageView
+            android:id="@+id/vip_center3_btn1"
+            android:layout_width="20dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+
+            android:src="@drawable/btn_downarrow_2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dp"
+            android:textColor="@color/gold_textcolor"
+            android:textSize="@dimen/vip_center_title_textsize" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/vid_center_content3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        >
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/cutline" />
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="@dimen/vip_center_conten_padding"
+        android:paddingRight="@dimen/vip_center_conten_padding"
+        android:paddingTop="@dimen/vip_center_conten_paddin_tb"
+        android:paddingBottom="@dimen/vip_center_conten_paddin_tb"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:lineSpacingExtra="5dp"
+            android:text="1，婚恋定制服务概述\n  如果您期望更加多元化的服务，不擅长主动联系，在爱情道路上需要建议和帮助；或者有足够的物质基础来实现自己对于婚恋对象的一些理想化、完美化要求。那么，美盟婚恋定制将是您最佳选择！"
+            android:textColor="#666666"
+            android:textSize="@dimen/vip_center_conten_textsize" />
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:lineSpacingExtra="5dp"
+            android:text="2，婚恋定制服务的意义"
+            android:textColor="#666666"
+            android:textSize="@dimen/vip_center_conten_textsize" />
+
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="5dp"
+            android:text="A、节约时间成本\n  选择一位匹配对象，需要花大量时间和精力去筛选沟通，也很难做到有效鉴别。我们深刻理解会员的事业、情感、生活情趣等综合需求和感受，有效的帮助会员同匹配对象进行深入了解和沟通，给每位会员提供真正适合自己、真正高效率的“婚恋定制”服务。"
+            android:textColor="#666666"
+            android:textSize="@dimen/vip_center_conten_textsize" />
+
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="5dp"
+            android:text="B、甄选范围大\n  美盟是面向全国的婚恋定制机构，已形成良好的品牌知名度和美誉度，不断有优质会员加入，符合大多数人审美趋向的优质会员成千上万。"
+            android:textColor="#666666"
+            android:textSize="@dimen/vip_center_conten_textsize" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="5dp"
+            android:text="C、甄选质量高\n  美盟严谨专业的甄选流程决定了推荐人的高质量，我们对会员的甄选采取团队合作模式，沟通深入、把握全面，不是一般传统婚介和大众平台所能比拟的。"
+            android:textColor="#666666"
+            android:textSize="@dimen/vip_center_conten_textsize" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="5dp"
+            android:text="D、保护当事人情感\n  美盟做为会员的代言人，私人红娘的专业身份可以减弱双方在交往中的心理优势，发挥公正客观的第三方撮合作用，同时消除异性陌生接触的敌意和防范心理。"
+            android:textColor="#666666"
+            android:textSize="@dimen/vip_center_conten_textsize" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="5dp"
+            android:text="E、金钱买不到爱情，但可以购买专业服务\n  美盟采取多对一的服务模式，私人红娘的任务就是专职按照定制会员的条件和要求进行广泛而充分的选择．对符合条件的优秀会员逐一进行沟通、鉴别、核实，经过基本筛选后的精华会员才推荐给定制会员亲自选择，这样就极大提高了选择效率和成功机率。同时，美盟的猎头团队、形象顾问、法务顾问、策划团队紧密配合相互衔接，整个服务流水线日夜不停的高效率运转，大大提高了征婚的效率和质量。"
+            android:textColor="#666666"
+            android:textSize="@dimen/vip_center_conten_textsize" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="5dp"
+            android:text="F、付费的价值\n  您可能打算花费几十万元准备一场终身难忘的婚礼，用数十年余生陪伴爱侣，投入一辈子感情和精力经营一个幸福的家庭。但，有没有想过如何找到这个值得您付出所有的人？通过美盟的专业服务，早日为您找到携手一生的爱人，家庭幸福对您整体生活质量的提升，是再多金钱也不能替代的。"
+            android:textColor="#666666"
+            android:textSize="@dimen/vip_center_conten_textsize" />
+
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:lineSpacingExtra="5dp"
+            android:text="3，婚恋定制服务内容\n①建立完整的个人私密档案及服务记录\n②资深私人红娘服务\n③爱情猎头定向猎取\n④审核小组鉴别审核\n⑤私人红娘面试约见、沟通六大背景\n⑥多对一专家小组集体测评\n⑦甄选人选推荐和引荐\n⑧享受美盟高端活动、品质沙龙等各项会员权益\n升级版\n①专业定制个性化整体征婚策划方案\n②指定城市、特殊渠道、特殊要求定向猎取、资源专享\n③首席顾问服务团队，全方位婚恋咨询服务\n④提供个人形象指导服务\n⑤专业渠道、专业媒体推广征婚\n⑥专场海选活动等"
+            android:textColor="#666666"
+            android:textSize="@dimen/vip_center_conten_textsize" />
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="5dp"
+            android:text="详情请咨询您的专属婚恋顾问\n贵宾专线：400-8783-520"
+            android:textColor="#666666"
+            android:textSize="@dimen/vip_center_conten_textsize" />
+
+
+
+
+        <Button
+            android:id="@+id/vip_center3_buy_button"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buttonstyle_pressed"
+            android:text="联系红娘"
+            android:textColor="@color/text"
+            android:textSize="@dimen/vip_center_btn_textsize"/>
+
+
+    </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/cutline" />
+</LinearLayout>

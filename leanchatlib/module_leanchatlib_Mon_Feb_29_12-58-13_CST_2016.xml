@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_leanchatlib" default="compile.module.leanchatlib">
+  <dirname property="module.leanchatlib.basedir" file="${ant.file.module_leanchatlib}"/>
+  
+  <property name="module.jdk.home.leanchatlib" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.leanchatlib" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.leanchatlib" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.leanchatlib" value="-encoding GBK -source 8 ${compiler.args}"/>
+  
+  <property name="leanchatlib.output.dir" value="${module.leanchatlib.basedir}/build"/>
+  <property name="leanchatlib.testoutput.dir" value="${module.leanchatlib.basedir}/build"/>
+  
+  <path id="leanchatlib.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="leanchatlib.module.production.classpath">
+    <path refid="${module.jdk.classpath.leanchatlib}"/>
+  </path>
+  
+  <path id="leanchatlib.runtime.production.module.classpath">
+    <pathelement location="${leanchatlib.output.dir}"/>
+  </path>
+  
+  <path id="leanchatlib.module.classpath">
+    <path refid="${module.jdk.classpath.leanchatlib}"/>
+    <pathelement location="${leanchatlib.output.dir}"/>
+  </path>
+  
+  <path id="leanchatlib.runtime.module.classpath">
+    <pathelement location="${leanchatlib.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.leanchatlib">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.leanchatlib">
+    <patternset refid="excluded.from.module.leanchatlib"/>
+  </patternset>
+  
+  
+  <target name="compile.module.leanchatlib" depends="compile.module.leanchatlib.production,compile.module.leanchatlib.tests" description="Compile module leanchatlib"/>
+  
+  <target name="compile.module.leanchatlib.production" depends="register.custom.compilers" description="Compile module leanchatlib; production classes"/>
+  
+  <target name="compile.module.leanchatlib.tests" depends="register.custom.compilers,compile.module.leanchatlib.production" description="compile module leanchatlib; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.leanchatlib" description="cleanup module">
+    <delete dir="${leanchatlib.output.dir}"/>
+    <delete dir="${leanchatlib.testoutput.dir}"/>
+  </target>
+</project>
