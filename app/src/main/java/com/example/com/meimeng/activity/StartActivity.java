@@ -212,7 +212,6 @@ public class StartActivity extends BaseActivity {
                                 Intent intent = new Intent(StartActivity.this, HomeActivity.class);
                                 intent.putExtra("init_type", 1);
                                 startActivity(intent);
-
                             } else {
                                 initview();
                             }
