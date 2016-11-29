@@ -1,0 +1,8 @@
+<application>
+  <component name="FileTypeManager" version="16">
+    <extensionMap>
+      <mapping pattern="player" type="Android Nine-Patch" />
+      <mapping pattern="pointsList.txt" type="PLAIN_TEXT" />
+    </extensionMap>
+  </component>
+</application>
