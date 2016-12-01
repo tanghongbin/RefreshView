@@ -6,6 +6,10 @@
           <option name="url" value="http://github.com" />
           <option name="userName" value="18780475970@163.com" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="http://git.oschina.net" />
+          <option name="userName" value="tanghongbin@17m.club" />
+        </UrlAndUserName>
       </list>
     </option>
   </component>
