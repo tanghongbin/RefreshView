@@ -1,0 +1,35 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'//添加
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "24.0.0"
+
+    defaultConfig {
+        minSdkVersion 4
+        targetSdkVersion 23
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+
+
+    //添加
+publish {
+        userOrg = 'tanghongbin'//bintray.com用户名
+        groupId = 'com.tang'//jcenter上的路径
+        artifactId = 'refreshview'//项目名称
+        publishVersion = '1.0'//版本号
+        desc = 'Oh hi, this is a refreshview in android ?'//描述，不重要
+        website = 'https://github.com/chrisbanes/Android-PullToRefresh/tree/master/library'//网站，不重要；尽量模拟github上的地址，例如我这样的；当然你有地址最好了
+    }
+}
