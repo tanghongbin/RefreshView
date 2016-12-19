@@ -48,10 +48,11 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="93dp" />
         </RelativeLayout>
-        <com.handmark.pulltorefresh.library.PullToRefreshListView
+
+        <com.publishproject.core.views.BindingListView
             android:layout_width="match_parent"
+            android:id="@+id/listView"
             android:layout_weight="1"
-            android:id="@+id/listview"
             android:layout_height="match_parent"/>
     </LinearLayout>
 

@@ -1,40 +1,31 @@
 package com.publishproject;
 
-import android.Manifest;
-import android.os.Environment;
-import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 
 
-import com.handmark.pulltorefresh.library.PullToRefreshBase;
-import com.handmark.pulltorefresh.library.PullToRefreshListView;
 import com.hwangjr.rxbus.annotation.Subscribe;
-import com.lzy.okgo.request.BaseRequest;
 import com.publishproject.core.activitiesconfig.BaseActivity;
 import com.publishproject.core.commonconfig.loggerconfigs.LogUtil;
-import com.publishproject.core.commonconfig.busconfigs.BusHelper;
-import com.publishproject.events.ErrorEvent;
+import com.publishproject.core.views.BindingListView;
 import com.publishproject.core.commonconfig.netconfigs.NetManager;
-import com.publishproject.core.commonconfig.netconfigs.RequestFactory;
-import com.publishproject.core.commonconfig.netconfigs.callbacks.ProgressCallback;
-import com.publishproject.core.commonconfig.permissionconfigs.PermissionHelper;
-import com.publishproject.core.commonconfig.permissionconfigs.PermissionListener;
 import com.publishproject.databinding.ActivityMainBinding;
 import com.publishproject.events.DownLoadEvent;
 import com.publishproject.events.UploadEvent;
 
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
 
 public class MainActivity extends BaseActivity<ActivityMainBinding> {
 
     private ImageView imageView;
-    private PullToRefreshListView listView;
+    private BindingListView listView;
+    private ArrayList<String> list;
+    private List<String> array = Arrays.asList("123","11","22","33","44","55","66");
 
     @Override
     public int setContentLayout() {
@@ -43,18 +34,12 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> {
 
     @Override
     public void initView() {
+        list = new ArrayList<String>();
+        list.addAll(array);
         imageView = (ImageView) findViewById(R.id.imageView);
-        listView = (PullToRefreshListView)findViewById(R.id.listview);
-        listView.setMode(PullToRefreshBase.Mode.BOTH);
-        listView.setAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_expandable_list_item_1,new String[]{
-                "123","3232","443","343","2323",
-                "123","3232","443","343","2323",
-                "123","3232","443","343","2323",
-                "123","3232","443","343","2323",
-                "123","3232","443","343","2323", "123","3232","443","343","2323",
-                "123","3232","443","343","2323",
-                "123","3232","443","343","2323"
-        }));
+        listView = (BindingListView)findViewById(R.id.listView);
+        listView.setAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_expandable_list_item_1,list));
+        listView.bindList(list);
     }
 
     @Override
@@ -70,37 +55,17 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> {
 
             case R.id.get:
 
-                PermissionHelper.requestPermission(this, "权限被拒绝", new PermissionListener() {
-                    @Override
-                    public void onGranted() {
-
-                        String url = "https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=2147050784,3310809643&fm=58";
-                        BaseRequest request = RequestFactory.createDownloadRequest(url)
-                                .tag(this);
-                        NetManager.downLoad( request, path, DownLoadEvent.class, new ProgressCallback() {
-                            @Override
-                            public void onProgress(long currentSize, long totalSize, float progress) {
-                                Log.i("TAG","dsfdfsf");
-                                LogUtil.i("TAG","current:"+currentSize+"\n  totalSize:"+totalSize+"\n  progress:"+progress);
-                            }
-                        });
-                    }
-
-                    @Override
-                    public void onDenied(List<String> permissions) {
-
-                    }
-                }, Manifest.permission.WRITE_EXTERNAL_STORAGE);
-                BusHelper.postEvent(new ErrorEvent());
+                for (int i = 0;i<10;i++){
+                    list.add(new Random(1000).nextInt()+"");
+                }
+                listView.notifyObserverDataChanged();
                 break;
             case R.id.post:
-                final String pathssss = Environment.getExternalStorageDirectory() + File.separator + "download.png";
-                final String postUrl = "http://120.76.226.150:8080/service/api/file/upload";
-                List<String> arrayList = Arrays.asList(pathssss, pathssss, pathssss, pathssss, pathssss);
-                List<Object> objs = new ArrayList<>();
-                objs.addAll(arrayList);
-                List<BaseRequest> requestList = RequestFactory.createMutipleReuqst(objs);
-                NetManager.upLoadMutipleFile( requestList, UploadEvent.class);
+                list.clear();
+                listView.notifyObserverDataChanged();
+                ImageView imageView = new ImageView(this);
+                imageView.setImageResource(R.mipmap.ic_launcher);
+                listView.setNoContentView(imageView);
                 break;
         }
     }
