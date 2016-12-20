@@ -2,7 +2,7 @@ package com.publishproject.util;
 
 import android.text.TextUtils;
 
-import com.publishproject.core.commonconfig.jsonconfigs.JsonHelper;
+import com.publishproject.core.common.json.JsonHelper;
 
 import org.json.JSONException;
 import org.json.JSONObject;

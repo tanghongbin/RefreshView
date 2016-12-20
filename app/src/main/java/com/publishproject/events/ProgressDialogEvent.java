@@ -1,12 +1,8 @@
 package com.publishproject.events;
 
-import android.app.Activity;
-
 import com.hwangjr.rxbus.annotation.Subscribe;
 import com.hwangjr.rxbus.thread.EventThread;
-import com.publishproject.core.activitiesconfig.BaseActivity;
-import com.publishproject.events.RequestEndEvent;
-import com.publishproject.events.RequestStartEvent;
+import com.publishproject.core.activities.BaseActivity;
 
 /**
  * @author Android客户端组-tanghongbin

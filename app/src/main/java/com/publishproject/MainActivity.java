@@ -1,18 +1,21 @@
 package com.publishproject;
 
+import android.graphics.BitmapFactory;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 
 
 import com.hwangjr.rxbus.annotation.Subscribe;
-import com.publishproject.core.activitiesconfig.BaseActivity;
-import com.publishproject.core.commonconfig.loggerconfigs.LogUtil;
+import com.publishproject.core.activities.BaseActivity;
+import com.publishproject.core.common.logger.LogUtil;
 import com.publishproject.core.views.BindingListView;
-import com.publishproject.core.commonconfig.netconfigs.NetManager;
+import com.publishproject.core.common.net.NetManager;
 import com.publishproject.databinding.ActivityMainBinding;
 import com.publishproject.events.DownLoadEvent;
 import com.publishproject.events.UploadEvent;
+import com.publishproject.util.ImageChooseAndCropUtil;
+import com.publishproject.util.ImageCropCallback;
 
 
 import java.util.ArrayList;
@@ -61,11 +64,12 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> {
                 listView.notifyObserverDataChanged();
                 break;
             case R.id.post:
-                list.clear();
-                listView.notifyObserverDataChanged();
-                ImageView imageView = new ImageView(this);
-                imageView.setImageResource(R.mipmap.ic_launcher);
-                listView.setNoContentView(imageView);
+                ImageChooseAndCropUtil.getInstance(this).choosePic(new ImageCropCallback() {
+                    @Override
+                    public void call(String url) {
+                        imageView.setImageBitmap(BitmapFactory.decodeFile(url));
+                    }
+                });
                 break;
         }
     }

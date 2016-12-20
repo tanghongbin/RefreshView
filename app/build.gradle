@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.jakewharton.hugo'
 
 android {
     compileSdkVersion 23
@@ -43,5 +44,9 @@ dependencies {
     //RxJava扩展支持，根据需要添加
     //这是工具库
     compile 'com.tang:common-utils:1.2'
-    compile project(':refreshview')
+    compile 'com.tang:refreshview:1.0'
+
+//    compile 'com.tencent.bugly:crashreport:2.1.5'
+//    compile 'com.tencent.bugly:nativecrashreport:2.1.5'
+    compile 'com.orhanobut:logger:1.15'
 }
