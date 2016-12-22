@@ -7,6 +7,7 @@ import com.lzy.okgo.request.BaseRequest;
 import com.publishproject.core.common.logger.LogUtil;
 import com.publishproject.core.common.eventbus.BusHelper;
 import com.publishproject.events.BaseEvent;
+import com.publishproject.events.ErrorEvent;
 import com.publishproject.events.RequestEndEvent;
 import com.publishproject.events.RequestStartEvent;
 
@@ -71,7 +72,7 @@ public class HttpCallback<CLASS extends BaseEvent> extends com.lzy.okgo.callback
             if(TextUtils.isEmpty(errorMessage)){
                 errorMessage = e == null ? "" : e.getMessage();
             }
-            event.getError().setMessage(errorMessage);
+            event.setError(new ErrorEvent(errorMessage));
             BusHelper.postEvent(event);
         } catch (InstantiationException e1) {
             e1.printStackTrace();

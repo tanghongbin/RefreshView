@@ -14,6 +14,6 @@ import android.app.Dialog;
 public interface LoadingDialogInterface<T extends Dialog> {
     void showDialog();
     void showDialog(String text);
-    void dismissDialog();
+    void dismissXDialog();
     T getDialog();
 }

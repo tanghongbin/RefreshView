@@ -2,6 +2,7 @@ package com.publishproject.core.common.net;
 
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.request.BaseRequest;
+import com.lzy.okgo.request.GetRequest;
 import com.lzy.okgo.request.PostRequest;
 
 import java.io.File;
@@ -19,27 +20,42 @@ import pushlish.tang.com.commonutils.others.FileUtils;
  * @date 2016/12/14 17:18
  * @Description: 构建参数的工厂类,可自行配置
  */
-public final class RequestFactory {
+public final class RequestFactory extends AbsRequestFactory{
     private RequestFactory(){
 
     }
-    public static BaseRequest createGetRequest(String url){
-       return OkGo.get(url);
+
+    private static final RequestFactory requestFactory = new RequestFactory();
+    public static RequestFactory getInstance(){
+        return requestFactory;
     }
-    public static BaseRequest createPostRequest(String url){
+
+
+
+    @Override
+    public GetRequest getRequest(String url) {
+        return OkGo.get(url);
+    }
+
+    @Override
+    public PostRequest postRequest(String url) {
         return OkGo.post(url);
     }
-    public static BaseRequest createUploadRequest(String url){
+
+    @Override
+    public PostRequest uploadRequest(String url) {
         return OkGo.post(url);
     }
-    public static BaseRequest createDownloadRequest(String url){
+
+    @Override
+    public GetRequest downloadRequest(String url) {
         return OkGo.get(url);
     }
 
 
-    public static List<BaseRequest> createMutipleReuqst(List<Object> objs) {
+    public List<PostRequest> mutipleFileReuqst(List<Object> objs) {
         final String postUrl = "http://120.76.226.150:8080/service/api/file/upload";
-        List<BaseRequest> fileList = new ArrayList<>();
+        List<PostRequest> fileList = new ArrayList<>();
         for(Object o:objs){
             PostRequest http = OkGo.post(postUrl)
                     .params("name", "file");

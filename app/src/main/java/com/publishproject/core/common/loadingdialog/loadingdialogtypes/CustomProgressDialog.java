@@ -136,8 +136,7 @@ public class CustomProgressDialog extends Dialog implements LoadingDialogInterfa
         show();
     }
 
-    @Override
-    public void dismissDialog() {
+    public void dismissXDialog() {
         dismiss();
     }
 

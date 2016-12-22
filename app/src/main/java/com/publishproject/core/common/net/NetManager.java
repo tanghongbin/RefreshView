@@ -106,7 +106,7 @@ public final class NetManager {
      * 利用rx进行多个文件的顺序上传，并在每个文件
      * 上传成功后返回上传结果(返回的结果在UI线程处理),或者上传失败后重新进行上传，
      * 如果再次尝试上传失败后，则进行下一张上传,最后会返回一个集合，里面存储的是上传失败的
-     * file对象集合。
+     * file对象。
      */
 
     public static <T extends BaseEvent<UploadErrorEvent>>void upLoadMutipleFile(List<BaseRequest> requestList, final Class<T> classType) {

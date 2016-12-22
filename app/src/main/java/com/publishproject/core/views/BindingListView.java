@@ -14,7 +14,7 @@ import com.handmark.pulltorefresh.library.PullToRefreshListView;
  * @date 2016/12/19 16:14
  * @Description: TODO
  */
-public class BindingListView<T> extends BindingNetView<PullToRefreshListView> {
+public class BindingListView extends BindingNetView<PullToRefreshListView> {
     public BindingListView(Context context) {
         super(context);
     }

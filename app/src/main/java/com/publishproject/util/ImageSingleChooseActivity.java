@@ -36,7 +36,6 @@ public class ImageSingleChooseActivity extends AppCompatActivity {
     @Override
     public void onAttachedToWindow() {
         super.onAttachedToWindow();
-
     }
 
     public void onClick(View view){

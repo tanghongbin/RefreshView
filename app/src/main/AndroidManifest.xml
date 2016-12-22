@@ -75,7 +75,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".util.ImageSingleChooseActivity"></activity>
+        <activity android:name=".util.ImageSingleChooseActivity"
+            android:theme="@style/myTransparent">
+
+        </activity>
     </application>
 
 </manifest>

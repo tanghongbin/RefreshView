@@ -4,6 +4,7 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
@@ -69,6 +70,7 @@ public abstract class BindingNetView<VIEW extends PullToRefreshAdapterViewBase> 
     public BindingNetView(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(context);
+
     }
 
     public View getOriginalView(){
@@ -81,6 +83,13 @@ public abstract class BindingNetView<VIEW extends PullToRefreshAdapterViewBase> 
         refreshView = generateBindView();
         refreshView.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.MATCH_PARENT));
         addView(refreshView);
+    }
+
+    public void setItemClickListener(AdapterView.OnItemClickListener onItemClickListener){
+        refreshView.setOnItemClickListener(onItemClickListener);
+    }
+    public void setLongClickListener(OnLongClickListener onLongClickListener){
+        refreshView.setOnLongClickListener(onLongClickListener);
     }
 
     /**

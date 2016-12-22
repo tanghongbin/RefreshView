@@ -15,6 +15,8 @@ import com.publishproject.core.common.eventbus.BusHelper;
 import com.publishproject.core.common.loadingdialog.LoadingDialogInterface;
 import com.publishproject.core.views.HeadView;
 
+import pushlish.tang.com.commonutils.others.KeyboardUtils;
+
 
 /**
  * @author Android客户端组-tanghongbin
@@ -64,6 +66,13 @@ public abstract class BaseActivity<LAYOUT extends ViewDataBinding> extends AppCo
         }
         dialogInterface = LoadingDialogUtil.createLoadingDialog(this);
         headView = (HeadView) findViewById(R.id.common_head_view);
+        headView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+        KeyboardUtils.hideSoftInput(this);//如果有软键盘弹出，则隐藏
         BusHelper.registe(this);
         BusHelper.registe(dialogEvent);
         initView();
@@ -86,7 +95,7 @@ public abstract class BaseActivity<LAYOUT extends ViewDataBinding> extends AppCo
     }
 
     public void dismissDialog(){
-        dialogInterface.dismissDialog();
+        dialogInterface.dismissXDialog();
     }
 
     @Override
