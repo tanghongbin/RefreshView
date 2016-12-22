@@ -1,25 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
-
-    <data>
-        <variable
-            name="events"
-            type="com.publishproject.MainActivity"/>
-    </data>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_height="match_parent"
         tools:context="com.publishproject.MainActivity">
+
+    <include layout="@layout/common_head_view"/>
 
         <RelativeLayout
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <Button
-                android:onClick="@{(get)->(events.onClick(get))}"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="get"
@@ -29,7 +23,6 @@
                 android:layout_marginTop="103dp" />
 
             <Button
-                android:onClick="@{(post)->(events.onClick(post))}"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="post"
@@ -56,4 +49,3 @@
             android:layout_height="match_parent"/>
     </LinearLayout>
 
-</layout>

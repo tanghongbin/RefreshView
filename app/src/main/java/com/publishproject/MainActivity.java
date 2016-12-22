@@ -11,7 +11,7 @@ import com.publishproject.core.activities.BaseActivity;
 import com.publishproject.core.common.logger.LogUtil;
 import com.publishproject.core.views.BindingListView;
 import com.publishproject.core.common.net.NetManager;
-import com.publishproject.databinding.ActivityMainBinding;
+
 import com.publishproject.events.DownLoadEvent;
 import com.publishproject.events.UploadEvent;
 import com.publishproject.util.ImageChooseAndCropUtil;
@@ -23,7 +23,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
-public class MainActivity extends BaseActivity<ActivityMainBinding> {
+public class MainActivity extends BaseActivity {
 
     private ImageView imageView;
     private BindingListView listView;
@@ -41,13 +41,13 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> {
         list.addAll(array);
         imageView = (ImageView) findViewById(R.id.imageView);
         listView = (BindingListView)findViewById(R.id.listView);
+
         listView.setAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_expandable_list_item_1,list));
         listView.bindList(list);
     }
 
     @Override
     public void loadData() {
-        binding.setEvents(this);
         NetManager.init(this);
     }
 

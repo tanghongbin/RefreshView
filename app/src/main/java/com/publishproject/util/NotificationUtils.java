@@ -8,9 +8,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v4.app.NotificationCompat;
 
-import com.publishproject.R;
-
-import hugo.weaving.DebugLog;
 
 /**
  * @author Android客户端组-tanghongbin
@@ -31,7 +28,6 @@ public class NotificationUtils {
         builder.setSmallIcon(icon);
         sendNofication(context,builder);
     }
-    @DebugLog
     public static void sendNofication(Context context, Builder infoBuilder) {
         NotificationManager mNotificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context)

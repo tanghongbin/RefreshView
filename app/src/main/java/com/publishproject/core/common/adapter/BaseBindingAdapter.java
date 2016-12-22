@@ -1,8 +1,6 @@
 package com.publishproject.core.common.adapter;
 
 import android.content.Context;
-import android.databinding.DataBindingUtil;
-import android.databinding.ViewDataBinding;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -15,7 +13,7 @@ import java.util.List;
  * @author : 汤洪斌
  * @time : 2016/9/8 16:59
  *
- * @param T item对象
+ * @param OBJ item对象
  * @param W 每个item布局视图生成的ViewDataBinding的子类
  * @des     : 展示简单视图的基类adapter
  * @simple
@@ -35,7 +33,7 @@ import java.util.List;
  *        }
  *    };
  */
-public class BaseBindingAdapter<OBJ, DATABINDING extends ViewDataBinding> extends BaseAdapter {
+public class BaseBindingAdapter<OBJ, DATABINDING > extends BaseAdapter {
     //在调试时如果没有数据时可写死的数量
     public static int UNCHANGE_COUNT = 0;
     private Context mContext;
@@ -80,7 +78,7 @@ public class BaseBindingAdapter<OBJ, DATABINDING extends ViewDataBinding> extend
         DATABINDING w = null;
         if(convertView == null){
             convertView = View.inflate(mContext, mLayoutId,null);
-            w = DataBindingUtil.bind(convertView);
+//            w = DataBindingUtil.bind(convertView);
             convertView.setTag(w);
         }
 

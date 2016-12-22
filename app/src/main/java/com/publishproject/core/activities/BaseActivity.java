@@ -1,19 +1,22 @@
 package com.publishproject.core.activities;
 
-import android.databinding.DataBindingUtil;
-import android.databinding.ViewDataBinding;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.publishproject.R;
+import com.publishproject.core.compenent.BaseActivityCompenent;
+import com.publishproject.core.compenent.DaggerBaseActivityCompenent;
+import com.publishproject.core.module.BaseActivityModule;
 import com.publishproject.events.ProgressDialogEvent;
 import com.publishproject.core.common.loadingdialog.LoadingDialogUtil;
 import com.publishproject.core.common.logger.LogUtil;
 import com.publishproject.core.common.eventbus.BusHelper;
 import com.publishproject.core.common.loadingdialog.LoadingDialogInterface;
 import com.publishproject.core.views.HeadView;
+
+import javax.inject.Inject;
 
 import pushlish.tang.com.commonutils.others.KeyboardUtils;
 
@@ -34,38 +37,36 @@ import pushlish.tang.com.commonutils.others.KeyboardUtils;
  * 在initView()里面进行赋值初始化操作
  * loaddata（）中加载数据
  */
-public abstract class BaseActivity<LAYOUT extends ViewDataBinding> extends AppCompatActivity implements View.OnClickListener{
-    public LAYOUT binding;
+public abstract class BaseActivity extends AppCompatActivity implements View.OnClickListener{
     protected boolean isNeedBinding(){
         return true;
     }
-    protected LoadingDialogInterface dialogInterface;
+    @Inject
+    public LoadingDialogInterface dialogInterface;
     public abstract int setContentLayout();
-    protected HeadView headView;
+    @Inject
+    public HeadView headView;
 
     //自行进行数据加载或者布局初始化
     public abstract void initView();
     public abstract void loadData();
-    private ProgressDialogEvent dialogEvent;
+    @Inject
+    public ProgressDialogEvent dialogEvent;
 
     @Override
     protected final void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         try{
-            if(isNeedBinding()){
-                binding = DataBindingUtil.setContentView(this,setContentLayout());
-            }else {
-                setContentView(setContentLayout());
-            }
+            setContentView(setContentLayout());
         }catch (Exception e){
             LogUtil.i("TAG","资源没有找到");
             e.printStackTrace();
         }
-        if (dialogEvent == null){
-            dialogEvent = new ProgressDialogEvent(this);
-        }
-        dialogInterface = LoadingDialogUtil.createLoadingDialog(this);
-        headView = (HeadView) findViewById(R.id.common_head_view);
+
+        BaseActivityCompenent component =
+                DaggerBaseActivityCompenent.builder().baseActivityModule(new BaseActivityModule(this)).build();
+        component.inject(this);
+
         headView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
