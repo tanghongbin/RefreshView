@@ -3,6 +3,7 @@
     <extensionMap>
       <mapping pattern="player" type="Android Nine-Patch" />
       <mapping pattern="pointsList.txt" type="PLAIN_TEXT" />
+      <mapping ext="md" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
 </application>
