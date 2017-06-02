@@ -18,8 +18,16 @@
           <option name="url" value="https://git.oschina.net/wanghaohan1991/galleros28.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/github/android" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/chrislacy/TweetLanes.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
-    <option name="cloneParentDir" value="D:\work_space" />
+    <option name="cloneParentDir" value="D:\work_space\github_client" />
   </component>
 </application>
